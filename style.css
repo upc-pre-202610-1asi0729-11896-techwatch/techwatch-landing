@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --background: #F8FAFC;
+    --card: #FFFFFF;
+    --text-main: #0F172A;
+    --text-secondary: #64748B;
+    --text-third: #FFFFFF;
+    --success: #22C55E;
+    --h1: 48px;
+    --h2: 32px;
+    --h3: 24px;
+    --text: 16px;
+    --small: 14px;
+    --border:10px;
+    --border-small:5px;
+    --font-weight:600;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 10px;
+    @media (min-width: 768px){
+        flex-direction: row;
+    }
+    .container-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--h2);
+        font-weight: var(--font-weight);
+        margin-left: var(--border-small);
+    }
+    .icon-img{
+        display: flex;
+        height: 50px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        color: var(--text-main);
+        gap: 20px;
+        font-size: var(--h2);
+        .nav-link{
+            color: var(--text-main);
+            font-weight: 600;
+
+            &:hover{
+                color: var(--primary-hover);
+            }
+        }
+        .nav-btn{
+            background-color: var(--primary);
+            font-size: var(--h2);
+            border-radius:var(--border) ;
+            color: var(--text-third);
+            border: none;
+            padding: var(--border-small);
+            margin-right: var(--border-small);
+            &:hover{
+                color: var(--text-main);
+            }
+        }
+    }
+
+}
