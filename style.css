@@ -8,84 +8,189 @@
     --text-third: #FFFFFF;
     --success: #22C55E;
     --h1: 48px;
-    --h2: 32px;
+    --h2: 25px;
     --h3: 24px;
     --text: 16px;
     --small: 14px;
-    --border:10px;
-    --border-small:5px;
+    --border:50px;
+    --border-small:10px;
     --font-weight:600;
+    --section:60vh;
+    --section-hero:100vh;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: var(--background);
     font-family: 'Inter', sans-serif;
 }
 .header{
-    border-radius: var(--border);
-    margin: var(--border);
-    background-color: var(--card);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--border);
-    gap: var(--border);
-    box-shadow: 12px 12px 100px -83px rgba(0,0,0,0.1);
-    @media (min-width: 768px){
-        flex-direction: row;
-    }
-    .container-logo{
+    background-image: url("https://linda-smart.com/wp-content/uploads/2024/03/Smart-Home-Linda-Smart-blog-IoT-9.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: var(--border-small);
+    padding-left: var(--border-small);
+    padding-right: var(--border-small);
+    .div-header{
+        border-radius: var(--border);
+        background: var(--card);
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        font-size: var(--h2);
-        background-color: var(--card);
-        font-weight: var(--font-weight);
-        margin-left: var(--border-small);
-        .title-logo{
-            background-color: var(--card);
+        justify-content: space-between;
+        padding: var(--border-small);
+        gap: var(--border-small);
+        box-shadow: 12px 12px 100px -83px rgba(0,0,0,0.1);
+        @media (min-width: 768px){
+            flex-direction: row;
         }
-    }
-    .icon-img{
-        background-color: var(--card);
-        display: flex;
-        height: 50px;
-        overflow: hidden;
-        object-fit: cover;
-    }
-    .navbar{
-        background-color: var(--card);
-        display: flex;
-        align-items: center;
-        color: var(--text-main);
-        gap: var(--h3);
-        font-size: var(--h2);
-        .nav-link{
-            background-color: var(--card);
-            color: var(--text-main);
-            font-weight: var(--font-weight);
 
-            &:hover{
-                color: var(--primary-hover);
+        .container-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--h2);
+            background-color: var(--card);
+            font-weight: var(--font-weight);
+            margin-left: var(--border-small);
+            .title-logo{
+                background-color: var(--card);
+                color: var(--primary);
             }
         }
-        .nav-btn{
-            background-color: var(--primary);
-            font-weight: var(--font-weight);
+        .icon-img{
+            background-color: var(--card);
+            display: flex;
+            height: 50px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .navbar{
+            background-color: var(--card);
+            display: flex;
+            align-items: center;
+            color: var(--text-main);
+            gap: var(--h3);
             font-size: var(--h2);
-            border-radius:var(--border) ;
+            .nav-link{
+                background-color: var(--card);
+                color: var(--text-main);
+                font-weight: var(--font-weight);
+
+                &:hover{
+                    color: var(--primary-hover);
+                }
+            }
+            .nav-btn{
+                background-color: var(--primary);
+                font-weight: var(--font-weight);
+                font-size: var(--h2);
+                border-radius:var(--border) ;
+                color: var(--text-third);
+                border: none;
+                padding: var(--border-small);
+                margin-right: var(--border-small);
+                &:hover{
+                    color: var(--text-main);
+                }
+            }
+        }
+    }
+    .hero{
+        min-height: var(--section-hero);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: var(--border);
+
+        .title-main{
+            color: var(--primary);
+            font-size: var(--h1);
+            background: none;
+        }
+        .btn-primary{
+            background: none;
+            border-radius: var(--border);
+            font-size: var(--h2);
+            padding: var(--border-small);
+            background-color: var(--primary);
             color: var(--text-third);
             border: none;
-            padding: var(--border-small);
-            margin-right: var(--border-small);
-            &:hover{
-                color: var(--text-main);
-            }
+        }
+        .txt-primary{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            color: var(--text-third);
+            font-size: var(--h2);
         }
     }
+}
+
+.main{
+    section{
+        min-height: var(--section);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: var(--border-small);
+    }
+    .pricing{
+        h3{
+            font-size: var(--h1);
+        }
+        .card-pricing{
+            padding: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: var(--border);
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--primary);
+                padding: var(--border);
+                border-radius: var(--border);
+                gap: var(--border-small);
+                h2{
+                    font-size: var(--h1);
+                    color: var(--text-third);
+                }
+                p{
+                    font-size: var(--h2);
+                    color: var(--text);
+                }
+                .btn-secondary{
+                    background-color: var(--text-main);
+
+                    font-weight: var(--font-weight);
+                    font-size: var(--h2);
+                    border-radius:var(--border) ;
+                    color: var(--text-third);
+                    border: none;
+                    padding: var(--border-small);
+                    margin-right: var(--border-small);
+                    &:hover{
+                        color: var(--primary);
+                    }
+                }
+
+            }
+
+
+
+
+        }
+
+    }
+
 
 }
