@@ -17,13 +17,23 @@
         </div>
 
         <!--HEADER/NAVBAR---------->
-        <nav class="navbar">
-            <a href="#hero" class="nav-link">Hero</a>
-            <a href="#feature" class="nav-link">Features</a>
-            <a href="#about" class="nav-link">About us</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <button class="btn-primary" type="button">Get Started</button>
+        <nav class="navbar" aria-label="Main">
+            <div class="navbar-links">
+                <a href="#hero" class="nav-link">Hero</a>
+                <a href="#feature" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About us</a>
+                <a href="#platform" class="nav-link">Our platform</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="navbar-actions">
+                <div class="lang-switch" role="group" aria-label="Idioma (demo, sin acción)">
+                    <button type="button" class="lang-btn lang-btn--active">EN</button>
+                    <button type="button" class="lang-btn">ES</button>
+                </div>
+                <button type="button" class="btn-nav btn-nav--ghost">Login</button>
+                <button type="button" class="btn-nav btn-nav--primary">Regístrate</button>
+            </div>
         </nav>
     </div>
     <!--HEADER/HERO------------>
@@ -91,7 +101,7 @@
     <section id="about" class="full-screen section-content section-about">
         <div class="container-about">
             <h2>About us</h2>
-            <p class="about-lead">We are Software Engineering students at <strong>UPC</strong>, building TechWatch together—for future frontend and backend work on the platform.</p>
+            <p class="about-lead">We are Software Engineering students at <strong>UPC</strong>, building TechWatch together—a smart-home monitoring and analytics experience focused on clarity, savings, and better everyday decisions.</p>
             <div class="container-team-div">
                 <article class="card card-team">
                     <span class="team-emoji" aria-hidden="true">👨🏼‍💻</span>
@@ -100,55 +110,97 @@
                     <p class="team-bio">Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.</p>
                 </article>
                 <article class="card card-team card-team--highlight">
-                    <span class="team-emoji" aria-hidden="true">👨🏼‍💻</span>
+                    <span class="team-emoji" aria-hidden="true">🚀</span>
                     <h3>Alexander Fernández</h3>
                     <p class="team-role team-role--design">UI / UX &amp; frontend-oriented</p>
-                    <p class="team-bio">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with Flutter and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
+                    <p class="team-bio">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">👨🏼‍💻</span>
+                    <span class="team-emoji" aria-hidden="true">🛠️</span>
                     <h3>Ronal Toro</h3>
                     <p class="team-role">Logic &amp; integration-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">👨🏼‍💻</span>
+                    <span class="team-emoji" aria-hidden="true">💾</span>
                     <h3>Bruno Rodrigo</h3>
                     <p class="team-role">Logic &amp; data-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">👨🏼‍💻️</span>
+                    <span class="team-emoji" aria-hidden="true">⚙️</span>
                     <h3>Nombre Apellido</h3>
                     <p class="team-role">Team member</p>
-                    <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap toward full-stack TechWatch.</p>
+                    <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!--MAIN/PRICING-------->
-    <section id="pricing" class="full-screen section-content">
-        <h2>Pricing</h2>
-        <h3>Simple and Transparent Pricing</h3>
-        <div class="card-pricing">
+    <!--MAIN/PLATFORM-------->
+    <section id="platform" class="full-screen section-content section-platform" aria-labelledby="platform-title">
+        <div class="container-platform">
+            <h2 id="platform-title">Our platform</h2>
+            <p class="platform-lead">Technical direction for teammates, teachers, and contributors—kept separate from pricing and our team story.</p>
+            <div class="platform-card">
+                <h3 class="platform-card-title">Architecture &amp; stack (planned)</h3>
+                <p class="platform-text">The public web client is planned in <strong>Angular</strong>. Server-side services are planned in <strong>Java</strong>, with <strong>Domain-Driven Design (DDD)</strong> and a <strong>Clean Architecture</strong>-style layout so domain rules (homes, devices, consumption) stay testable as alerts, exports, and billing grow.</p>
+                <div class="platform-logos" aria-label="Platform technologies">
+                    <div class="platform-logo-card">
+                        <img class="platform-logo-img" src="https://raw.githubusercontent.com/Klerith/mas-talento/refs/heads/main/angular/angular-logo.png" alt="Angular logo">
+                        <p class="platform-logo-label"><strong>Angular</strong> - Frontend</p>
+                    </div>
+                    <div class="platform-logo-card">
+                        <img class="platform-logo-img" src="https://images.icon-icons.com/2699/PNG/512/java_horizontal_logo_icon_167858.png" alt="Java logo">
+                        <p class="platform-logo-label"><strong>Java</strong> - Backend</p>
+                    </div>
+                </div>
+                <ul class="platform-list">
+                    <li><strong>Angular</strong> — structured UI, reusable components, and room to grow into a full dashboard experience.</li>
+                    <li><strong>Java + DDD</strong> — domain-focused modules instead of scattering logic across layers.</li>
+                    <li><strong>Clean boundaries</strong> — clear separation between UI-facing use cases, core domain, and infrastructure (data stores, integrations).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <div class="card">
-                <p class="price">$9/mo</p>
-                <h2>Free</h2>
-                <p>bonnus</p>
-                <p>bonnus</p>
-                <h3>Pricing</h3>
-                <button class="btn-primary">Try it right now!</button>
+    <!--MAIN/PRICING-------->
+    <section id="pricing" class="full-screen section-content section-pricing">
+        <div class="container-pricing">
+            <h2>Pricing</h2>
+            <h3 class="pricing-subtitle">Plans that match how you use your smart home</h3>
+            <p class="pricing-intro">TechWatch follows a <strong>freemium</strong> model: start free to explore centralised monitoring and basic energy visibility, then upgrade when you need deeper history, smarter alerts, and exports for serious optimisation. All amounts below are in <strong>Peruvian soles (PEN)</strong>, <strong>indicative</strong>—they may change with taxes, IGV, or launch promotions.</p>
+            <div class="card-pricing">
+                <article class="card card-plan">
+                    <h4 class="plan-name">Free</h4>
+                    <p class="plan-tagline">For renters and first-time smart-home owners who want clarity without commitment.</p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;0</span> <span class="plan-period">/ mes</span></p>
+                    <ul class="plan-features" aria-label="Free plan includes">
+                        <li>Up to <strong>5 registered devices</strong> across your home</li>
+                        <li><strong>Room-based</strong> device organisation (living room, bedroom, etc.)</li>
+                        <li><strong>Essential dashboards</strong> — live status and recent activity at a glance</li>
+                        <li><strong>Basic energy view</strong> — see consumption trends for the last 7 days</li>
+                        <li><strong>Mobile-friendly</strong> web UI — control-centre style access from your phone</li>
+                        <li>Community email support (best-effort response times)</li>
+                    </ul>
+                    <button class="btn-primary btn-plan" type="button">Create free account</button>
+                </article>
+                <article class="card card-plan card-plan--premium">
+                    <h4 class="plan-name">Premium</h4>
+                    <p class="plan-tagline">For households that want history, proactive alerts, and data they can act on every month.</p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period">/ mes</span> <span class="plan-billing">cobro mensual · cancela cuando quieras</span></p>
+                    <ul class="plan-features" aria-label="Premium plan includes">
+                        <li><strong>Everything in Free</strong>, plus a higher or unlimited device cap (as defined at launch)</li>
+                        <li><strong>Extended metrics history</strong> — compare weeks and months, spot seasonal patterns</li>
+                        <li><strong>Custom alerts</strong> — thresholds for usage spikes, offline devices, or unusual schedules</li>
+                        <li><strong>Export &amp; reports</strong> — CSV/PDF-friendly summaries for budgeting and audits</li>
+                        <li><strong>Priority support</strong> — faster responses as we scale the team</li>
+                        <li>Early access to <strong>new analytics</strong> and integrations as they ship</li>
+                    </ul>
+                    <button class="btn-primary btn-plan" type="button">Start Premium trial</button>
+                </article>
             </div>
-            <div class="card">
-                <p class="price">$9/mo</p>
-                <h2>Premium</h2>
-                <p>bonnus</p>
-                <p>bonnus</p>
-                <h3>Pricing</h3>
-                <button class="btn-primary">Try it right now!</button>
-            </div>
+            <p class="pricing-footnote">TechWatch is under active development—features listed here reflect the intended roadmap. Early releases may use simulated data until device integrations are live.</p>
         </div>
     </section>
 
@@ -187,6 +239,7 @@
             <div class="section-footer">
                 <h2>Company</h2>
                 <p><a href="#about">About us</a></p>
+                <p><a href="#platform">Our platform</a></p>
                 <p><a href="#contact">Contact</a></p>
                 <p><a href="#pricing">Pricing</a></p>
             </div>
