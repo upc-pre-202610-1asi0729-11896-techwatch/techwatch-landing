@@ -98,7 +98,7 @@
             }
         }
     }
-    .hero{
+    #hero{
         min-height: var(--section-hero);
         display: flex;
         align-items: center;
@@ -141,7 +141,7 @@
         justify-content: center;
         padding: var(--border-small);
     }
-    .pricing{
+    #pricing{
         h3{
             font-size: var(--h1);
         }
@@ -192,5 +192,30 @@
 
     }
 
-
+#contact{
+    .contact-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .contact-us{
+            display: flex;
+            flex-direction: column;
+            gap: var(--border);
+            background-color: var(--primary);
+            padding: var(--border);
+            margin: var(--border);
+            border-radius: var(--border);
+            h2{
+                font-size: var(--h2);
+            }
+            p{
+                font-size: var(--text);
+            }
+            .input{
+                padding: var(--small);
+                border-radius: var(--border-small);
+            }
+        }
+    }
+}
 }
