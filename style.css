@@ -141,6 +141,42 @@
         justify-content: center;
         padding: var(--border-small);
     }
+    #feature{
+        .container-feature{
+            h2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--text-main);
+                font-weight: var(--font-weight);
+                padding: var(--border);
+            }
+            .container-feature-div{
+                display: flex;
+                flex-direction: row;
+                gap: var(--border-small);
+
+                .card-feature{
+                    border-radius: var(--border-small);
+                    background-color: var(--primary-hover);
+                    font-weight: var(--font-weight);
+                    padding: var(--border-small);
+                    h2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--text-third);
+                    }
+                    p{
+                        color: var(--text-main);
+                    }
+                }
+            }
+        }
+
+    }
+
     #pricing{
         h3{
             font-size: var(--h1);
@@ -192,30 +228,31 @@
 
     }
 
-#contact{
-    .contact-div{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        .contact-us{
+    #contact{
+        .contact-div{
             display: flex;
-            flex-direction: column;
-            gap: var(--border);
-            background-color: var(--primary);
-            padding: var(--border);
-            margin: var(--border);
-            border-radius: var(--border);
-            h2{
-                font-size: var(--h2);
-            }
-            p{
-                font-size: var(--text);
-            }
-            .input{
-                padding: var(--small);
-                border-radius: var(--border-small);
+            flex-direction: row;
+            align-items: center;
+            .contact-us{
+                display: flex;
+                flex-direction: column;
+                gap: var(--border);
+                background-color: var(--primary);
+                padding: var(--border);
+                margin: var(--border);
+                border-radius: var(--border);
+                h2{
+                    font-size: var(--h2);
+                }
+                p{
+                    font-size: var(--text);
+                }
+                .input{
+                    padding: var(--small);
+                    border-radius: var(--border-small);
+                }
             }
         }
     }
-}
-}
+
+    }
