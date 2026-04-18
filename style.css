@@ -1,210 +1,324 @@
-:root{
-    --primary: #2563EB;
-    --primary-hover: #1D4ED8;
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
 
-    --background: #F8FAFC;
-    --card: #FFFFFF;
-    --border-color: #E2E8F0;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-muted: #f1f5f9;
+    --border: #e2e8f0;
 
-    --text-main: #0F172A;
-    --text-secondary: #64748B;
+    --text-main: #0f172a;
+    --text-secondary: #475569;
+    --text-light: #e2e8f0;
 
     --radius: 16px;
-
-    --space-xl: 64px;
-    --space-lg: 32px;
-    --space-md: 16px;
-    --space-sm: 8px;
-
+    --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.1);
 }
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
+    font-family: Inter, "Segoe UI", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
-    background: radial-gradient(circle at top, #f1f5f9, #e2e8f0);
+
+body {
+    background: var(--bg);
+    color: var(--text-main);
+    line-height: 1.5;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-section{
+
+section,
+footer {
     scroll-snap-align: start;
 }
 
-
-
-/* HEADER */
-.header{
-    position: relative;
-    background-image: url("https://linda-smart.com/wp-content/uploads/2024/03/Smart-Home-Linda-Smart-blog-IoT-9.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-    &::before{
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(15, 23, 42, 0.6);
-    }
-}
-.div-header{
-    position: relative;
-    z-index: 2;
-
-    background: #64748B;
-    border-radius: var(--radius);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: var(--space-md);
-    box-shadow: 0 10px 30px #17181A;
-}
-.container-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: auto;
-
-}
-.icon-img{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-lg);
-}
-.nav-link{
-    color: var(--text-main);
-    &:hover{
-        color: var(--primary);
-    }
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* HERO */
-#hero{
-    position: relative;
-    z-index: 2;
+.full-screen {
+    min-height: 100vh;
+}
 
-    min-height: 90vh;
-
+.section-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    text-align: center;
-    color: white;
-    gap: var(--space-lg);
-}
-.title-main{
-    font-size: var(48px);
-}
-.txt-primary{
-    color: #E2E8F0;
-}
-.btn-primary{
-    background: linear-gradient(135deg, #2563EB, #1D4ED8);
-    color: white;
-
-    padding: 14px 28px;
-    border-radius: var(--radius);
-    border: none;
-    cursor: pointer;
-
-}
-
-
-
-/* MAIN */
-.main {
-    margin: auto;
-    text-align: center;
-}
-/* FEATURE*/
-.container-feature-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 24px;
+    padding: 120px 8vw 56px;
+    text-align: center;
 }
-.card{
-    background: linear-gradient(145deg, #ffffff, #f1f5f9);
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 28px;
-    width: 280px;
 
+/* HEADER + HERO */
+.header {
+    position: relative;
+    background-image: url("https://linda-smart.com/wp-content/uploads/2024/03/Smart-Home-Linda-Smart-blog-IoT-9.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.62));
+}
+
+.div-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: min(1100px, 92vw);
+    padding: 14px 20px;
+    border: 1px solid rgba(226, 232, 240, 0.25);
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(14px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-logo {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-link {
+    color: rgba(241, 245, 249, 0.9);
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+#hero {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.title-main {
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 850px;
+    line-height: 1.1;
+}
+
+.txt-primary {
+    font-size: clamp(1rem, 2.1vw, 1.2rem);
+    max-width: 760px;
+    color: var(--text-light);
+}
+
+.btn-primary {
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.28);
+}
+
+/* MAIN SECTIONS */
+.main {
+    text-align: center;
+}
+
+#feature,
+#pricing,
+#contact {
+    background: linear-gradient(180deg, var(--bg), var(--surface-muted));
+}
+
+.container-feature,
+.contact-div {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.container-feature-div {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-pricing {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#pricing .card {
+    width: 340px;
+    min-height: 360px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.contact-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+    gap: 22px;
+}
+
+.contact-us {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-soft);
     display: flex;
     flex-direction: column;
     gap: 12px;
-
-    transition: 0.3s;
-
-    &:hover{
-        transform: translateY(-8px);
-        box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-    }
-}
-/* PRICING */
-.card-pricing{
-    display: flex;
-    gap: var(--space-lg);
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.price{
-    font-size: 40px;
+    text-align: left;
 }
 
-
-.contact-us{
-    max-width: 500px;
-
-    margin: auto;
-    background: white;
-    padding: 32px;
-    border-radius: var(--radius);
-
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.contact-div img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: contain;
 }
-.input{
+
+.input {
+    border: 1px solid var(--border);
+    border-radius: 10px;
     padding: 12px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border-color);
+    outline: none;
 }
 
+.input:focus {
+    border-color: var(--primary);
+}
 
 /* FOOTER */
-.footer{
-    background: #0F172A;
-    color: white;
-    padding: 40px 20px;
-}
-.container-footer-div{
+.footer {
+    background: #0f172a;
+    color: #f8fafc;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    min-height: auto;
+    padding: 48px 0 24px;
+}
+
+.container-footer {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.container-footer-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+}
+
+.section-footer h2 {
+    margin-bottom: 8px;
+}
+
+.section-footer p {
+    color: #cbd5e1;
+}
+
+.section-footer-column {
+    margin-top: 22px;
+    border-top: 1px solid rgba(148, 163, 184, 0.35);
+    padding-top: 14px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 780px) {
+    .div-header {
+        border-radius: 18px;
+        padding: 10px 14px;
+    }
+
+    .navbar {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        font-size: 0.86rem;
+    }
+
+    .section-content {
+        padding-top: 130px;
+    }
+
+    .card-pricing {
+        flex-wrap: wrap;
+    }
+
+    #pricing .card {
+        width: min(100%, 360px);
+        min-height: auto;
+    }
 }
