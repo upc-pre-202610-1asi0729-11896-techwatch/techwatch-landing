@@ -164,12 +164,14 @@ a {
 }
 
 #feature,
+#about,
 #pricing,
 #contact {
     background: linear-gradient(180deg, var(--bg), var(--surface-muted));
 }
 
 .container-feature,
+.container-about,
 .contact-div {
     width: min(1100px, 92vw);
     margin: 0 auto;
@@ -177,9 +179,102 @@ a {
 
 .container-feature-div {
     margin-top: 22px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
+}
+
+#feature .card {
+    width: calc((100% - 60px) / 4);
+    min-width: 230px;
+    max-width: 260px;
+}
+
+.card--feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 28px;
+}
+
+.feature-emoji {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.card--feature h2 {
+    font-size: 1.15rem;
+}
+
+.card--feature p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* ABOUT US */
+.section-about .about-lead {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.container-team-div {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.card-team {
+    width: calc((100% - 80px) / 3);
+    min-width: 260px;
+    max-width: 340px;
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-team--highlight {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+}
+
+.team-emoji {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.card-team h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+.team-role {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+}
+
+.team-role--design {
+    color: #7c3aed;
+}
+
+.team-bio {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
 }
 
 .card-pricing {
@@ -286,6 +381,14 @@ a {
     color: #cbd5e1;
 }
 
+.footer .section-footer a {
+    color: #cbd5e1;
+}
+
+.footer .section-footer a:hover {
+    color: #fff;
+}
+
 .section-footer-column {
     margin-top: 22px;
     border-top: 1px solid rgba(148, 163, 184, 0.35);
@@ -320,5 +423,30 @@ a {
     #pricing .card {
         width: min(100%, 360px);
         min-height: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    #feature .card {
+        width: calc((100% - 40px) / 3);
+        max-width: 300px;
+    }
+
+    .card-team {
+        width: calc((100% - 40px) / 2);
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    #feature .card {
+        width: calc((100% - 20px) / 2);
+        min-width: 0;
+        max-width: 340px;
+    }
+
+    .card-team {
+        width: 100%;
+        max-width: 420px;
     }
 }
