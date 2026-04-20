@@ -8,15 +8,13 @@
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
 </head>
 <body>
-<!--HEADER---------------->
 <header class="header">
     <div class="div-header">
-        <div class="container-logo">
+        <a href="index.html" class="brand-link" aria-label="TechWatch home">
+            <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
             <p class="title-logo">Techwatch</p>
-            <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="icon">
-        </div>
+        </a>
 
-        <!--HEADER/NAVBAR---------->
         <nav class="navbar" aria-label="Main">
             <div class="navbar-links">
                 <a href="#hero" class="nav-link">Hero</a>
@@ -25,28 +23,29 @@
                 <a href="#pricing" class="nav-link">Pricing</a>
                 <a href="#testimonials" class="nav-link">Reviews</a>
                 <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="navbar-actions">
-                <div class="lang-switch" role="group" aria-label="Idioma (demo, sin acción)">
-                    <button type="button" class="lang-btn lang-btn--active">EN</button>
-                    <button type="button" class="lang-btn">ES</button>
-                </div>
-                <button type="button" class="btn-nav btn-nav--ghost">Login</button>
-                <button type="button" class="btn-nav btn-nav--primary">Regístrate</button>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="register.html" class="nav-link">Register</a>
             </div>
         </nav>
+
+        <div class="navbar-actions">
+            <div class="lang-switch" role="group" aria-label="Language (demo, no action)">
+                <button type="button" class="lang-btn lang-btn--active">EN</button>
+                <button type="button" class="lang-btn">ES</button>
+            </div>
+            <a href="login.html" class="btn-nav btn-nav--ghost">Login</a>
+            <a href="register.html" class="btn-nav btn-nav--primary">Register</a>
+        </div>
     </div>
-    <!--HEADER/HERO------------>
-    <section    id="hero" class="full-screen section-content">
-        <h1     class="title-main">Take Control of Your Smart Home</h1>
-        <p      class="txt-primary">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
-        <button class="btn-primary">Try it right now!</button>
+
+    <section id="hero" class="full-screen section-content">
+        <h1 class="title-main">Take Control of Your Smart Home</h1>
+        <p class="txt-primary">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
+        <button class="btn-primary" type="button">Try it right now!</button>
     </section>
 </header>
 
-<!--MAIN------------>
 <main class="main">
-    <!--MAIN/FEATURE-------->
     <section id="feature" class="full-screen section-content">
         <div class="container-feature">
             <h2>Features</h2>
@@ -97,38 +96,37 @@
         </div>
     </section>
 
-    <!--MAIN/ABOUT-------->
     <section id="about" class="full-screen section-content section-about">
         <div class="container-about">
             <h2>About us</h2>
-            <p class="about-lead">We are Software Engineering students at <strong>UPC</strong>, building TechWatch together—a smart-home monitoring and analytics experience focused on clarity, savings, and better everyday decisions.</p>
+            <p class="about-lead">UPC Software Engineering students building TechWatch</p>
             <div class="container-team-div">
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">👨🏼‍💻</span>
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Luis Alva</h3>
                     <p class="team-role">Logic &amp; backend-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.</p>
                 </article>
                 <article class="card card-team card-team--highlight">
-                    <span class="team-emoji" aria-hidden="true">🚀</span>
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Alexander Fernández</h3>
                     <p class="team-role team-role--design">UI / UX &amp; frontend-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">🛠️</span>
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Ronal Toro</h3>
                     <p class="team-role">Logic &amp; integration-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">💾</span>
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Bruno Rodrigo</h3>
                     <p class="team-role">Logic &amp; data-oriented</p>
                     <p class="team-bio">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.</p>
                 </article>
                 <article class="card card-team">
-                    <span class="team-emoji" aria-hidden="true">⚙️</span>
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Nombre Apellido</h3>
                     <p class="team-role">Team member</p>
                     <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch.</p>
@@ -137,12 +135,11 @@
         </div>
     </section>
 
-    <!--MAIN/PRICING-------->
     <section id="pricing" class="full-screen section-content section-pricing">
         <div class="container-pricing">
             <h2>Pricing</h2>
             <h3 class="pricing-subtitle">Plans that match how you use your smart home</h3>
-            <p class="pricing-intro">TechWatch follows a <strong>freemium</strong> model: start free to explore centralised monitoring and basic energy visibility, then upgrade when you need deeper history, smarter alerts, and exports for serious optimisation. All amounts below are in <strong>Peruvian soles (PEN)</strong>, <strong>indicative</strong>—they may change with taxes, IGV, or launch promotions.</p>
+            <p class="pricing-intro">Freemium: use it for free and upgrade for advanced features like history, alerts, and exports. Prices are in <strong>PEN</strong>. TechWatch is in active development, so features will roll out gradually and early versions may use simulated data until integrations are live.</p>
             <div class="card-pricing">
                 <article class="card card-plan">
                     <h4 class="plan-name">Free</h4>
@@ -161,7 +158,7 @@
                 <article class="card card-plan card-plan--premium">
                     <h4 class="plan-name">Premium</h4>
                     <p class="plan-tagline">For households that want history, proactive alerts, and data they can act on every month.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period">/ mes</span> <span class="plan-billing">cobro mensual · cancela cuando quieras</span></p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period">/ mes</span></p>
                     <ul class="plan-features" aria-label="Premium plan includes">
                         <li><strong>Everything in Free</strong>, plus a higher or unlimited device cap (as defined at launch)</li>
                         <li><strong>Extended metrics history</strong> — compare weeks and months, spot seasonal patterns</li>
@@ -173,11 +170,9 @@
                     <button class="btn-primary btn-plan" type="button">Start Premium trial</button>
                 </article>
             </div>
-            <p class="pricing-footnote">TechWatch is under active development—features listed here reflect the intended roadmap. Early releases may use simulated data until device integrations are live.</p>
         </div>
     </section>
 
-    <!--MAIN/TESTIMONIALS-------->
     <section id="testimonials" class="full-screen section-content section-testimonials">
         <div class="container-testimonials">
             <h2>What our clients say</h2>
@@ -186,90 +181,58 @@
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
                     <h3>Valentino Cruz</h3>
-                    <p class="testimonial-role">Cliente Premium</p>
-                    <p>"Ahora veo exactamente qué dispositivo está consumiendo más. En mi primer mes bajé mi recibo de luz sin cambiar toda mi rutina."</p>
+                    <p class="testimonial-role">Premium customer</p>
+                    <p>"I can finally see which device is driving usage. In my first month I lowered my power bill without changing my whole routine."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
                     <h3>Thiago Medina</h3>
-                    <p class="testimonial-role">Usuario Free</p>
-                    <p>"La app es fácil de usar y el panel en tiempo real me ayudó a organizar todo por habitaciones. Súper claro y rápido."</p>
+                    <p class="testimonial-role">Free user</p>
+                    <p>"The app is easy to use and the live dashboard helped me organize everything by room. Super clear and fast."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
                     <h3>Lautaro Reyes</h3>
-                    <p class="testimonial-role">Cliente Premium</p>
-                    <p>"Las alertas inteligentes me avisaron cuando un equipo quedó encendido toda la noche. Evité gasto innecesario al instante."</p>
+                    <p class="testimonial-role">Premium customer</p>
+                    <p>"Smart alerts told me when a device stayed on all night. I avoided unnecessary usage right away."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
                     <h3>Barbara Cantarero</h3>
-                    <p class="testimonial-role">Cliente Premium</p>
-                    <p>"Me encanta el diseño y cómo muestra todo en simple. Antes no entendía mis consumos; ahora puedo anticiparme cada semana."</p>
+                    <p class="testimonial-role">Premium customer</p>
+                    <p>"I love the design and how simple everything looks. I used to struggle with my usage; now I can plan ahead every week."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
                     <h3>Matias Solano</h3>
-                    <p class="testimonial-role">Usuario Free</p>
-                    <p>"Con TechWatch pasé de tener todo desordenado a controlar mi casa desde el celular. Muy útil para el día a día."</p>
+                    <p class="testimonial-role">Free user</p>
+                    <p>"TechWatch took me from a messy setup to controlling my home from my phone. Really useful day to day."</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!--MAIN/CONTACT-------->
     <section id="contact" class="full-screen section-content">
         <div class="contact-div">
             <div class="contact-us">
                 <h2>Contact Us</h2>
                 <p>Have questions about TechWatch? </p>
                 <p>We’re here to help you manage your smart home more efficiently.</p>
-                <input    class="input"           type="name"     placeholder="Friedrich Nietzsche">
-                <input    class="input"           type="email"    placeholder="Nietzsche@techwatch">
-
-                <textarea class="input" rows="5" type= "name"     placeholder="Your Message"></textarea>
-
+                <input class="input" type="text" name="contact-name" placeholder="Friedrich Nietzsche">
+                <input class="input" type="email" name="contact-email" placeholder="Nietzsche@techwatch">
+                <textarea class="input" rows="5" name="contact-message" placeholder="Your Message"></textarea>
+                <button class="btn-primary contact-send" type="button">Send</button>
             </div>
-            <img src="./assets/soport.png" alt="soport">
-
+            <img class="contact-illustration" src="https://estudiante.upc.edu.pe/_nuxt/gif-landing.DMH_R6to.gif" alt="Support illustration">
         </div>
-
     </section>
 
 </main>
 
-<!--FOOTER------------>
-<footer class="footer">
-
-    <section class="container-footer">
-        <div class="container-footer-div">
-            <div class="section-footer">
-                <h2>Techwatch</h2>
-                <h3>Smart Home Monitoring Made Simple</h3>
-                <p>TechWatch helps you monitor, analyze, and optimize your</p>
-                <p>smart home with real-time insights and intuitive dashboards.</p>
-            </div>
-            <div class="section-footer">
-                <h2>Company</h2>
-                <p><a href="#about">About us</a></p>
-                <p><a href="#contact">Contact</a></p>
-                <p><a href="#pricing">Pricing</a></p>
-                <p><a href="#testimonials">Reviews</a></p>
-            </div>
-            <div class="section-footer">
-                <h2>Social Media</h2>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Instagram</p>
-            </div>
-        </div>
-        <div class="section-footer-column">
-            <p>© 2026 TechWatch. All rights reserved.</p>
-        </div>
-
-    </section>
-
-
+<footer class="footer footer--compact">
+    <div class="container-footer">
+        <p class="footer-copy">© 2026 TechWatch. All rights reserved.</p>
+    </div>
 </footer>
 </body>
 </html>

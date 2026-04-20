@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — TechWatch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
+</head>
+<body class="auth-page">
+<header class="header header--auth">
+    <div class="div-header">
+        <a href="index.html" class="brand-link" aria-label="TechWatch home">
+            <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
+            <p class="title-logo">Techwatch</p>
+        </a>
+
+        <nav class="navbar" aria-label="Main">
+            <div class="navbar-links">
+                <a href="index.html#hero" class="nav-link">Hero</a>
+                <a href="index.html#feature" class="nav-link">Features</a>
+                <a href="index.html#about" class="nav-link">About us</a>
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+                <a href="index.html#testimonials" class="nav-link">Reviews</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="register.html" class="nav-link">Register</a>
+            </div>
+        </nav>
+
+        <div class="navbar-actions">
+            <div class="lang-switch" role="group" aria-label="Language (demo, no action)">
+                <button type="button" class="lang-btn lang-btn--active">EN</button>
+                <button type="button" class="lang-btn">ES</button>
+            </div>
+            <a href="login.html" class="btn-nav btn-nav--ghost">Login</a>
+            <a href="register.html" class="btn-nav btn-nav--primary">Register</a>
+        </div>
+    </div>
+
+    <section class="auth-panel" aria-labelledby="login-title">
+        <div class="auth-card">
+            <h1 id="login-title">Log in</h1>
+            <form class="auth-form" action="#" method="get">
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="username" placeholder="you@example.com">
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" autocomplete="current-password" placeholder="••••••••">
+                </label>
+                <button class="btn-primary auth-submit" type="submit">Log in</button>
+            </form>
+            <p class="auth-footer-row">No account? <a href="register.html">Register</a></p>
+        </div>
+    </section>
+</header>
+
+<footer class="footer footer--compact">
+    <div class="container-footer">
+        <p class="footer-copy">© 2026 TechWatch. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
