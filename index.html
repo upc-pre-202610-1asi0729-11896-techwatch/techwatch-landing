@@ -7,90 +7,90 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
 </head>
-<body>
+<body data-page="index">
 <header class="header">
     <div class="div-header">
-        <a href="index.html" class="brand-link" aria-label="TechWatch home">
+        <a href="index.html" class="brand-link" data-i18n-aria="meta.brandHome" aria-label="TechWatch home">
             <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
             <p class="title-logo">Techwatch</p>
         </a>
 
-        <nav class="navbar" aria-label="Main">
+        <nav class="navbar" aria-label="Main" data-i18n-aria="meta.navMain">
             <div class="navbar-links">
-                <a href="#hero" class="nav-link">Hero</a>
-                <a href="#feature" class="nav-link">Features</a>
-                <a href="#about" class="nav-link">About us</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#testimonials" class="nav-link">Reviews</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="login.html" class="nav-link">Login</a>
-                <a href="register.html" class="nav-link">Register</a>
+                <a href="#hero" class="nav-link" data-i18n="nav.hero">Hero</a>
+                <a href="#feature" class="nav-link" data-i18n="nav.features">Features</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About us</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+                <a href="#testimonials" class="nav-link" data-i18n="nav.reviews">Reviews</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="login.html" class="nav-link" data-i18n="nav.login">Login</a>
+                <a href="register.html" class="nav-link" data-i18n="nav.register">Register</a>
             </div>
         </nav>
 
         <div class="navbar-actions">
-            <div class="lang-switch" role="group" aria-label="Language (demo, no action)">
-                <button type="button" class="lang-btn lang-btn--active">EN</button>
-                <button type="button" class="lang-btn">ES</button>
+            <div class="lang-switch" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+                <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="es">ES</button>
             </div>
-            <a href="login.html" class="btn-nav btn-nav--ghost">Login</a>
-            <a href="register.html" class="btn-nav btn-nav--primary">Register</a>
+            <a href="login.html" class="btn-nav btn-nav--ghost" data-i18n="nav.login">Login</a>
+            <a href="register.html" class="btn-nav btn-nav--primary" data-i18n="nav.register">Register</a>
         </div>
     </div>
 
     <section id="hero" class="full-screen section-content">
-        <h1 class="title-main">Take Control of Your Smart Home</h1>
-        <p class="txt-primary">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
-        <button class="btn-primary" type="button">Try it right now!</button>
+        <h1 class="title-main" data-i18n="hero.title">Take Control of Your Smart Home</h1>
+        <p class="txt-primary" data-i18n="hero.subtitle">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
+        <a class="btn-primary" href="dashboard.html" data-i18n="hero.cta">Try it right now!</a>
     </section>
 </header>
 
 <main class="main">
     <section id="feature" class="full-screen section-content">
         <div class="container-feature">
-            <h2>Features</h2>
+            <h2 data-i18n="features.title">Features</h2>
             <div class="container-feature-div">
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">💻</span>
-                    <h2>Core</h2>
-                    <p>Real-Time Monitoring</p>
-                    <p>Track your devices and see what’s happening in your home instantly.</p>
+                    <h2 data-i18n="features.coreTitle">Core</h2>
+                    <p data-i18n="features.coreP1">Real-Time Monitoring</p>
+                    <p data-i18n="features.coreP2">Track your devices and see what’s happening in your home instantly.</p>
                 </div>
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">📈</span>
-                    <h2>Economic Value</h2>
-                    <p>Energy Consumption Insights</p>
-                    <p>Understand which devices consume the most energy and reduce unnecessary costs.</p>
+                    <h2 data-i18n="features.econTitle">Economic Value</h2>
+                    <p data-i18n="features.econP1">Energy Consumption Insights</p>
+                    <p data-i18n="features.econP2">Understand which devices consume the most energy and reduce unnecessary costs.</p>
                 </div>
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">🕹️</span>
-                    <h2>Experience</h2>
-                    <p>Mobile control</p>
-                    <p>Access your home data anytime, anywhere from your smartphone</p>
+                    <h2 data-i18n="features.expTitle">Experience</h2>
+                    <p data-i18n="features.expP1">Mobile control</p>
+                    <p data-i18n="features.expP2">Access your home data anytime, anywhere from your smartphone</p>
                 </div>
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">⚙️</span>
-                    <h2>Organization</h2>
-                    <p>Device and space management</p>
-                    <p>Organize your devices by room and easily manage your home</p>
+                    <h2 data-i18n="features.orgTitle">Organization</h2>
+                    <p data-i18n="features.orgP1">Device and space management</p>
+                    <p data-i18n="features.orgP2">Organize your devices by room and easily manage your home</p>
                 </div>
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">🛡️</span>
-                    <h2>Security</h2>
-                    <p>Smart Alerts</p>
-                    <p>Get instant notifications when unusual activity is detected at home.</p>
+                    <h2 data-i18n="features.secTitle">Security</h2>
+                    <p data-i18n="features.secP1">Smart Alerts</p>
+                    <p data-i18n="features.secP2">Get instant notifications when unusual activity is detected at home.</p>
                 </div>
 
                 <div class="card card--feature">
                     <span class="feature-emoji" aria-hidden="true">🖥️</span>
-                    <h2>Analytics</h2>
-                    <p>Actionable Dashboards</p>
-                    <p>Transform household data into clear insights to make better daily decisions.</p>
+                    <h2 data-i18n="features.anaTitle">Analytics</h2>
+                    <p data-i18n="features.anaP1">Actionable Dashboards</p>
+                    <p data-i18n="features.anaP2">Transform household data into clear insights to make better daily decisions.</p>
                 </div>
             </div>
         </div>
@@ -98,38 +98,38 @@
 
     <section id="about" class="full-screen section-content section-about">
         <div class="container-about">
-            <h2>About us</h2>
-            <p class="about-lead">UPC Software Engineering students building TechWatch</p>
+            <h2 data-i18n="about.title">About us</h2>
+            <p class="about-lead" data-i18n="about.lead">UPC Software Engineering students building TechWatch</p>
             <div class="container-team-div">
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Luis Alva</h3>
-                    <p class="team-role">Logic &amp; backend-oriented</p>
-                    <p class="team-bio">Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.</p>
+                    <p class="team-role" data-i18n="about.roleLuis">Logic &amp; backend-oriented</p>
+                    <p class="team-bio" data-i18n="about.bioLuis">Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.</p>
                 </article>
                 <article class="card card-team card-team--highlight">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Alexander Fernández</h3>
-                    <p class="team-role team-role--design">UI / UX &amp; frontend-oriented</p>
-                    <p class="team-bio">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
+                    <p class="team-role team-role--design" data-i18n="about.roleAlex">UI / UX &amp; frontend-oriented</p>
+                    <p class="team-bio" data-i18n-html="about.bioAlex">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Ronal Toro</h3>
-                    <p class="team-role">Logic &amp; integration-oriented</p>
-                    <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
+                    <p class="team-role" data-i18n="about.roleRonal">Logic &amp; integration-oriented</p>
+                    <p class="team-bio" data-i18n="about.bioRonal">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Bruno Rodrigo</h3>
-                    <p class="team-role">Logic &amp; data-oriented</p>
-                    <p class="team-bio">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.</p>
+                    <p class="team-role" data-i18n="about.roleBruno">Logic &amp; data-oriented</p>
+                    <p class="team-bio" data-i18n="about.bioBruno">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Nombre Apellido</h3>
-                    <p class="team-role">Team member</p>
-                    <p class="team-bio">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch.</p>
+                    <h3 data-i18n="about.namePlaceholder">Nombre Apellido</h3>
+                    <p class="team-role" data-i18n="about.roleMember">Team member</p>
+                    <p class="team-bio" data-i18n="about.bioMember">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch.</p>
                 </article>
             </div>
         </div>
@@ -137,37 +137,48 @@
 
     <section id="pricing" class="full-screen section-content section-pricing">
         <div class="container-pricing">
-            <h2>Pricing</h2>
-            <h3 class="pricing-subtitle">Plans that match how you use your smart home</h3>
-            <p class="pricing-intro">Freemium: use it for free and upgrade for advanced features like history, alerts, and exports. Prices are in <strong>PEN</strong>. TechWatch is in active development, so features will roll out gradually and early versions may use simulated data until integrations are live.</p>
+            <h2 data-i18n="pricing.title">Pricing</h2>
+            <h3 class="pricing-subtitle" data-i18n="pricing.subtitle">Plans that match how you use your smart home</h3>
+            <p class="pricing-intro" data-i18n-html="pricing.introHtml">Three paid tiers in <strong>PEN</strong> (indicative). TechWatch is in active development, so features will roll out gradually and early versions may use simulated data until integrations are live.</p>
             <div class="card-pricing">
                 <article class="card card-plan">
-                    <h4 class="plan-name">Free</h4>
-                    <p class="plan-tagline">For renters and first-time smart-home owners who want clarity without commitment.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;0</span> <span class="plan-period">/ mes</span></p>
-                    <ul class="plan-features" aria-label="Free plan includes">
-                        <li>Up to <strong>5 registered devices</strong> across your home</li>
-                        <li><strong>Room-based</strong> device organisation (living room, bedroom, etc.)</li>
-                        <li><strong>Essential dashboards</strong> — live status and recent activity at a glance</li>
-                        <li><strong>Basic energy view</strong> — see consumption trends for the last 7 days</li>
-                        <li><strong>Mobile-friendly</strong> web UI — control-centre style access from your phone</li>
-                        <li>Community email support (best-effort response times)</li>
+                    <h4 class="plan-name" data-i18n="pricing.starterName">Starter</h4>
+                    <p class="plan-tagline" data-i18n="pricing.starterTag">Entry monitoring for a small set of devices and rooms.</p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;10</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <ul class="plan-features" data-i18n-aria="meta.starterFeatures" aria-label="Starter plan includes">
+                        <li data-i18n-html="pricing.starterLi1">Core <strong>device management</strong> views</li>
+                        <li data-i18n-html="pricing.starterLi2"><strong>Live status</strong> for a limited device count</li>
+                        <li data-i18n-html="pricing.starterLi3"><strong>Room grouping</strong> for essentials</li>
+                        <li data-i18n-html="pricing.starterLi4"><strong>7-day</strong> activity snapshot</li>
+                        <li data-i18n="pricing.starterLi5">Email support (community tier)</li>
                     </ul>
-                    <button class="btn-primary btn-plan" type="button">Create free account</button>
+                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.starterBtn">Choose Starter</button>
                 </article>
                 <article class="card card-plan card-plan--premium">
-                    <h4 class="plan-name">Premium</h4>
-                    <p class="plan-tagline">For households that want history, proactive alerts, and data they can act on every month.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period">/ mes</span></p>
-                    <ul class="plan-features" aria-label="Premium plan includes">
-                        <li><strong>Everything in Free</strong>, plus a higher or unlimited device cap (as defined at launch)</li>
-                        <li><strong>Extended metrics history</strong> — compare weeks and months, spot seasonal patterns</li>
-                        <li><strong>Custom alerts</strong> — thresholds for usage spikes, offline devices, or unusual schedules</li>
-                        <li><strong>Export &amp; reports</strong> — CSV/PDF-friendly summaries for budgeting and audits</li>
-                        <li><strong>Priority support</strong> — faster responses as we scale the team</li>
-                        <li>Early access to <strong>new analytics</strong> and integrations as they ship</li>
+                    <h4 class="plan-name" data-i18n="pricing.standardName">Standard</h4>
+                    <p class="plan-tagline" data-i18n="pricing.standardTag">More history, alerts, and exports for active households.</p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <ul class="plan-features" data-i18n-aria="meta.standardFeatures" aria-label="Standard plan includes">
+                        <li data-i18n-html="pricing.standardLi1"><strong>Everything in Starter</strong>, with a higher device cap</li>
+                        <li data-i18n-html="pricing.standardLi2"><strong>Extended history</strong> for trends and comparisons</li>
+                        <li data-i18n-html="pricing.standardLi3"><strong>Custom alerts</strong> for usage and offline events</li>
+                        <li data-i18n-html="pricing.standardLi4"><strong>CSV-friendly exports</strong> for budgeting</li>
+                        <li data-i18n="pricing.standardLi5">Faster support queue</li>
                     </ul>
-                    <button class="btn-primary btn-plan" type="button">Start Premium trial</button>
+                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.standardBtn">Choose Standard</button>
+                </article>
+                <article class="card card-plan">
+                    <h4 class="plan-name" data-i18n="pricing.completeName">Complete</h4>
+                    <p class="plan-tagline" data-i18n="pricing.completeTag">Full visibility, reporting, and priority access as we scale.</p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;20</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <ul class="plan-features" data-i18n-aria="meta.completeFeatures" aria-label="Complete plan includes">
+                        <li data-i18n-html="pricing.completeLi1"><strong>Everything in Standard</strong>, top device tier at launch</li>
+                        <li data-i18n-html="pricing.completeLi2"><strong>Long-range analytics</strong> and seasonal views</li>
+                        <li data-i18n-html="pricing.completeLi3"><strong>Reports</strong> suitable for audits and optimisation</li>
+                        <li data-i18n-html="pricing.completeLi4"><strong>Priority support</strong> and roadmap previews</li>
+                        <li data-i18n-html="pricing.completeLi5">Early access to <strong>integrations</strong> as they ship</li>
+                    </ul>
+                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.completeBtn">Choose Complete</button>
                 </article>
             </div>
         </div>
@@ -175,38 +186,38 @@
 
     <section id="testimonials" class="full-screen section-content section-testimonials">
         <div class="container-testimonials">
-            <h2>What our clients say</h2>
-            <p class="testimonials-lead">Real comments from users who improved their daily smart-home experience with TechWatch.</p>
-            <div class="testimonial-slider" aria-label="Client reviews slider">
+            <h2 data-i18n="testimonials.title">What our clients say</h2>
+            <p class="testimonials-lead" data-i18n="testimonials.lead">Real comments from users who improved their daily smart-home experience with TechWatch.</p>
+            <div class="testimonial-slider" data-i18n-aria="meta.testimonialsSlider" aria-label="Client reviews slider">
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
                     <h3>Valentino Cruz</h3>
-                    <p class="testimonial-role">Premium customer</p>
-                    <p>"I can finally see which device is driving usage. In my first month I lowered my power bill without changing my whole routine."</p>
+                    <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
+                    <p data-i18n="testimonials.q1">"I can finally see which device is driving usage. In my first month I lowered my power bill without changing my whole routine."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
                     <h3>Thiago Medina</h3>
-                    <p class="testimonial-role">Free user</p>
-                    <p>"The app is easy to use and the live dashboard helped me organize everything by room. Super clear and fast."</p>
+                    <p class="testimonial-role" data-i18n="testimonials.roleFree">Free user</p>
+                    <p data-i18n="testimonials.q2">"The app is easy to use and the live dashboard helped me organize everything by room. Super clear and fast."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
                     <h3>Lautaro Reyes</h3>
-                    <p class="testimonial-role">Premium customer</p>
-                    <p>"Smart alerts told me when a device stayed on all night. I avoided unnecessary usage right away."</p>
+                    <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
+                    <p data-i18n="testimonials.q3">"Smart alerts told me when a device stayed on all night. I avoided unnecessary usage right away."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
                     <h3>Barbara Cantarero</h3>
-                    <p class="testimonial-role">Premium customer</p>
-                    <p>"I love the design and how simple everything looks. I used to struggle with my usage; now I can plan ahead every week."</p>
+                    <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
+                    <p data-i18n="testimonials.q4">"I love the design and how simple everything looks. I used to struggle with my usage; now I can plan ahead every week."</p>
                 </article>
                 <article class="card card-testimonial">
                     <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
                     <h3>Matias Solano</h3>
-                    <p class="testimonial-role">Free user</p>
-                    <p>"TechWatch took me from a messy setup to controlling my home from my phone. Really useful day to day."</p>
+                    <p class="testimonial-role" data-i18n="testimonials.roleFree">Free user</p>
+                    <p data-i18n="testimonials.q5">"TechWatch took me from a messy setup to controlling my home from my phone. Really useful day to day."</p>
                 </article>
             </div>
         </div>
@@ -215,15 +226,15 @@
     <section id="contact" class="full-screen section-content">
         <div class="contact-div">
             <div class="contact-us">
-                <h2>Contact Us</h2>
-                <p>Have questions about TechWatch? </p>
-                <p>We’re here to help you manage your smart home more efficiently.</p>
-                <input class="input" type="text" name="contact-name" placeholder="Friedrich Nietzsche">
-                <input class="input" type="email" name="contact-email" placeholder="Nietzsche@techwatch">
-                <textarea class="input" rows="5" name="contact-message" placeholder="Your Message"></textarea>
-                <button class="btn-primary contact-send" type="button">Send</button>
+                <h2 data-i18n="contact.title">Contact Us</h2>
+                <p data-i18n="contact.line1">Have questions about TechWatch? </p>
+                <p data-i18n="contact.line2">We’re here to help you manage your smart home more efficiently.</p>
+                <input class="input" type="text" name="contact-name" data-i18n-placeholder="contact.phName" placeholder="Friedrich Nietzsche">
+                <input class="input" type="email" name="contact-email" data-i18n-placeholder="contact.phEmail" placeholder="Nietzsche@techwatch">
+                <textarea class="input" rows="5" name="contact-message" data-i18n-placeholder="contact.phMessage" placeholder="Your Message"></textarea>
+                <button class="btn-primary contact-send" type="button" data-i18n="contact.send">Send</button>
             </div>
-            <img class="contact-illustration" src="https://estudiante.upc.edu.pe/_nuxt/gif-landing.DMH_R6to.gif" alt="Support illustration">
+            <img class="contact-illustration" src="https://estudiante.upc.edu.pe/_nuxt/gif-landing.DMH_R6to.gif" data-i18n-alt="contact.illustrationAlt" alt="Support illustration">
         </div>
     </section>
 
@@ -231,8 +242,9 @@
 
 <footer class="footer footer--compact">
     <div class="container-footer">
-        <p class="footer-copy">© 2026 TechWatch. All rights reserved.</p>
+        <p class="footer-copy" data-i18n="footer.copy">© 2026 TechWatch. All rights reserved.</p>
     </div>
 </footer>
+<script src="./i18n.js"></script>
 </body>
 </html>

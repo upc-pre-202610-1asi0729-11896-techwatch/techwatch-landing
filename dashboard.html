@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — TechWatch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
+</head>
+<body class="dashboard-app" data-page="dashboard">
+<div class="dashboard-app-shell">
+    <header class="dashboard-topbar">
+        <a href="index.html" class="dashboard-brand" data-i18n-aria="meta.dashboardBrand" aria-label="Back to home">
+            <img class="dashboard-brand-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
+            <span class="dashboard-brand-name">Techwatch</span>
+        </a>
+        <div class="dashboard-topbar-end">
+            <div class="lang-switch lang-switch--light" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+                <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="es">ES</button>
+            </div>
+            <span class="dashboard-topbar-tag" data-i18n="dashboard.topTag">Dashboard</span>
+        </div>
+    </header>
+
+    <div class="dashboard-body">
+        <aside class="dashboard-sidebar" data-i18n-aria="meta.dashboardNav" aria-label="Navigation">
+            <div class="dashboard-profile">
+                <img class="dashboard-avatar" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Portrait_of_Friedrich_Nietzsche.jpg" alt="">
+                <p class="dashboard-user-name">Friedrich Nietzsche</p>
+            </div>
+            <nav class="dashboard-side-nav">
+                <button type="button" class="dashboard-nav-item" data-i18n="dashboard.settings">Settings</button>
+                <button type="button" class="dashboard-nav-item dashboard-nav-item--active" data-i18n="dashboard.deviceMgmt">Device Management</button>
+                <button type="button" class="dashboard-nav-item" data-i18n="dashboard.simulation">Simulation</button>
+                <button type="button" class="dashboard-nav-item" data-i18n="dashboard.analytics">Analytics</button>
+                <button type="button" class="dashboard-nav-item" data-i18n="dashboard.subscriptions">Subscriptions</button>
+                <button type="button" class="dashboard-nav-item dashboard-nav-item--logout" data-i18n="dashboard.logout">Log out</button>
+            </nav>
+            <p class="dashboard-sidebar-foot" data-i18n="dashboard.sidebarFoot">© 2026 TechWatch</p>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="dashboard-content-head">
+                <h1 class="dashboard-content-title" data-i18n="dashboard.contentTitle">Device Management</h1>
+                <p class="dashboard-content-lead" data-i18n="dashboard.contentLead">Static sample view (no data or logic).</p>
+            </header>
+
+            <section class="dashboard-card" aria-labelledby="dm-heading">
+                <h2 id="dm-heading" class="dashboard-card-title" data-i18n="dashboard.cardTitle">Devices</h2>
+                <ul class="dashboard-fake-list">
+                    <li class="dashboard-fake-row"><span class="dashboard-fake-name" data-i18n="dashboard.row1Name">Living room hub</span><span class="dashboard-fake-status" data-i18n="dashboard.statusOnline">Online</span></li>
+                    <li class="dashboard-fake-row"><span class="dashboard-fake-name" data-i18n="dashboard.row2Name">Kitchen sensor pack</span><span class="dashboard-fake-status" data-i18n="dashboard.statusOnline">Online</span></li>
+                    <li class="dashboard-fake-row"><span class="dashboard-fake-name" data-i18n="dashboard.row3Name">Garage controller</span><span class="dashboard-fake-status" data-i18n="dashboard.statusSync">Syncing</span></li>
+                </ul>
+                <div class="dashboard-card-actions">
+                    <button type="button" class="btn-secondary-dashboard" data-i18n="dashboard.btnAdd">Add device</button>
+                    <button type="button" class="btn-secondary-dashboard" data-i18n="dashboard.btnRooms">Edit rooms</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script src="./i18n.js"></script>
+</body>
+</html>

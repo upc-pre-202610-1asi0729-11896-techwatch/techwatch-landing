@@ -7,60 +7,61 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
 </head>
-<body class="auth-page">
+<body class="auth-page" data-page="login">
 <header class="header header--auth">
     <div class="div-header">
-        <a href="index.html" class="brand-link" aria-label="TechWatch home">
+        <a href="index.html" class="brand-link" data-i18n-aria="meta.brandHome" aria-label="TechWatch home">
             <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
             <p class="title-logo">Techwatch</p>
         </a>
 
-        <nav class="navbar" aria-label="Main">
+        <nav class="navbar" aria-label="Main" data-i18n-aria="meta.navMain">
             <div class="navbar-links">
-                <a href="index.html#hero" class="nav-link">Hero</a>
-                <a href="index.html#feature" class="nav-link">Features</a>
-                <a href="index.html#about" class="nav-link">About us</a>
-                <a href="index.html#pricing" class="nav-link">Pricing</a>
-                <a href="index.html#testimonials" class="nav-link">Reviews</a>
-                <a href="index.html#contact" class="nav-link">Contact</a>
-                <a href="login.html" class="nav-link">Login</a>
-                <a href="register.html" class="nav-link">Register</a>
+                <a href="index.html#hero" class="nav-link" data-i18n="nav.hero">Hero</a>
+                <a href="index.html#feature" class="nav-link" data-i18n="nav.features">Features</a>
+                <a href="index.html#about" class="nav-link" data-i18n="nav.about">About us</a>
+                <a href="index.html#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+                <a href="index.html#testimonials" class="nav-link" data-i18n="nav.reviews">Reviews</a>
+                <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="login.html" class="nav-link" data-i18n="nav.login">Login</a>
+                <a href="register.html" class="nav-link" data-i18n="nav.register">Register</a>
             </div>
         </nav>
 
         <div class="navbar-actions">
-            <div class="lang-switch" role="group" aria-label="Language (demo, no action)">
-                <button type="button" class="lang-btn lang-btn--active">EN</button>
-                <button type="button" class="lang-btn">ES</button>
+            <div class="lang-switch" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+                <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="es">ES</button>
             </div>
-            <a href="login.html" class="btn-nav btn-nav--ghost">Login</a>
-            <a href="register.html" class="btn-nav btn-nav--primary">Register</a>
+            <a href="login.html" class="btn-nav btn-nav--ghost" data-i18n="nav.login">Login</a>
+            <a href="register.html" class="btn-nav btn-nav--primary" data-i18n="nav.register">Register</a>
         </div>
     </div>
 
     <section class="auth-panel" aria-labelledby="login-title">
         <div class="auth-card">
-            <h1 id="login-title">Log in</h1>
+            <h1 id="login-title" data-i18n="auth.loginTitle">Log in</h1>
             <form class="auth-form" action="#" method="get">
                 <label>
-                    Email
-                    <input type="email" name="email" autocomplete="username" placeholder="you@example.com">
+                    <span data-i18n="auth.emailLabel">Email</span>
+                    <input type="email" name="email" autocomplete="username" data-i18n-placeholder="auth.emailPlaceholder" placeholder="you@example.com">
                 </label>
                 <label>
-                    Password
-                    <input type="password" name="password" autocomplete="current-password" placeholder="••••••••">
+                    <span data-i18n="auth.passwordLabel">Password</span>
+                    <input type="password" name="password" autocomplete="current-password" data-i18n-placeholder="auth.passwordPlaceholder" placeholder="••••••••">
                 </label>
-                <button class="btn-primary auth-submit" type="submit">Log in</button>
+                <button class="btn-primary auth-submit" type="submit" data-i18n="auth.submitLogin">Log in</button>
             </form>
-            <p class="auth-footer-row">No account? <a href="register.html">Register</a></p>
+            <p class="auth-footer-row"><span data-i18n="auth.footerNoAccount">No account?</span> <a href="register.html" data-i18n="auth.footerRegister">Register</a></p>
         </div>
     </section>
 </header>
 
 <footer class="footer footer--compact">
     <div class="container-footer">
-        <p class="footer-copy">© 2026 TechWatch. All rights reserved.</p>
+        <p class="footer-copy" data-i18n="footer.copy">© 2026 TechWatch. All rights reserved.</p>
     </div>
 </footer>
+<script src="./i18n.js"></script>
 </body>
 </html>
