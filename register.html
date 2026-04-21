@@ -9,6 +9,7 @@
 </head>
 <body class="auth-page" data-page="register">
 <header class="header header--auth">
+    <div class="nav-menu-backdrop" aria-hidden="true" hidden></div>
     <div class="div-header">
         <a href="index.html" class="brand-link" data-i18n-aria="meta.brandHome" aria-label="TechWatch home">
             <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
@@ -16,26 +17,38 @@
         </a>
 
         <nav class="navbar" aria-label="Main" data-i18n-aria="meta.navMain">
-            <div class="navbar-links">
+            <div class="navbar-links" id="primary-navigation">
                 <a href="index.html#hero" class="nav-link" data-i18n="nav.hero">Hero</a>
                 <a href="index.html#feature" class="nav-link" data-i18n="nav.features">Features</a>
                 <a href="index.html#about" class="nav-link" data-i18n="nav.about">About us</a>
                 <a href="index.html#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
                 <a href="index.html#testimonials" class="nav-link" data-i18n="nav.reviews">Reviews</a>
                 <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-                <a href="login.html" class="nav-link" data-i18n="nav.login">Login</a>
-                <a href="register.html" class="nav-link" data-i18n="nav.register">Register</a>
+                <div class="nav-drawer-lang" role="presentation">
+                    <div class="lang-switch lang-switch--drawer" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+                        <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
+                        <button type="button" class="lang-btn" data-lang="es">ES</button>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <div class="navbar-actions">
-            <div class="lang-switch" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+            <div class="lang-switch lang-switch--toolbar" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
                 <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
                 <button type="button" class="lang-btn" data-lang="es">ES</button>
             </div>
             <a href="login.html" class="btn-nav btn-nav--ghost" data-i18n="nav.login">Login</a>
             <a href="register.html" class="btn-nav btn-nav--primary" data-i18n="nav.register">Register</a>
         </div>
+
+        <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" data-i18n-aria="meta.navMenuToggle" aria-label="Open site menu">
+            <span class="nav-menu-toggle-bars" aria-hidden="true">
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+            </span>
+        </button>
     </div>
 
     <section class="auth-panel" aria-labelledby="register-title">
@@ -71,5 +84,6 @@
     </div>
 </footer>
 <script src="./i18n.js"></script>
+<script src="./nav-drawer.js"></script>
 </body>
 </html>

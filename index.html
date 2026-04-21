@@ -9,6 +9,7 @@
 </head>
 <body data-page="index">
 <header class="header">
+    <div class="nav-menu-backdrop" aria-hidden="true" hidden></div>
     <div class="div-header">
         <a href="index.html" class="brand-link" data-i18n-aria="meta.brandHome" aria-label="TechWatch home">
             <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
@@ -16,26 +17,38 @@
         </a>
 
         <nav class="navbar" aria-label="Main" data-i18n-aria="meta.navMain">
-            <div class="navbar-links">
+            <div class="navbar-links" id="primary-navigation">
                 <a href="#hero" class="nav-link" data-i18n="nav.hero">Hero</a>
                 <a href="#feature" class="nav-link" data-i18n="nav.features">Features</a>
                 <a href="#about" class="nav-link" data-i18n="nav.about">About us</a>
                 <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
                 <a href="#testimonials" class="nav-link" data-i18n="nav.reviews">Reviews</a>
                 <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-                <a href="login.html" class="nav-link" data-i18n="nav.login">Login</a>
-                <a href="register.html" class="nav-link" data-i18n="nav.register">Register</a>
+                <div class="nav-drawer-lang" role="presentation">
+                    <div class="lang-switch lang-switch--drawer" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+                        <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
+                        <button type="button" class="lang-btn" data-lang="es">ES</button>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <div class="navbar-actions">
-            <div class="lang-switch" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
+            <div class="lang-switch lang-switch--toolbar" role="group" data-i18n-aria="meta.langGroup" aria-label="Language">
                 <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
                 <button type="button" class="lang-btn" data-lang="es">ES</button>
             </div>
             <a href="login.html" class="btn-nav btn-nav--ghost" data-i18n="nav.login">Login</a>
             <a href="register.html" class="btn-nav btn-nav--primary" data-i18n="nav.register">Register</a>
         </div>
+
+        <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" data-i18n-aria="meta.navMenuToggle" aria-label="Open site menu">
+            <span class="nav-menu-toggle-bars" aria-hidden="true">
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+                <span class="nav-menu-toggle-bar"></span>
+            </span>
+        </button>
     </div>
 
     <section id="hero" class="full-screen section-content">
@@ -105,31 +118,31 @@
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Luis Alva</h3>
                     <p class="team-role" data-i18n="about.roleLuis">Logic &amp; backend-oriented</p>
-                    <p class="team-bio" data-i18n="about.bioLuis">Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.</p>
+                    <p class="team-bio" data-i18n="about.bioLuis">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Backend structure and APIs.</p>
                 </article>
                 <article class="card card-team card-team--highlight">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Alexander Fernández</h3>
                     <p class="team-role team-role--design" data-i18n="about.roleAlex">UI / UX &amp; frontend-oriented</p>
-                    <p class="team-bio" data-i18n-html="about.bioAlex">Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.</p>
+                    <p class="team-bio" data-i18n="about.bioAlex">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and frontend for web and mobile.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Ronal Toro</h3>
                     <p class="team-role" data-i18n="about.roleRonal">Logic &amp; integration-oriented</p>
-                    <p class="team-bio" data-i18n="about.bioRonal">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.</p>
+                    <p class="team-bio" data-i18n="about.bioRonal">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Clean integration with future frontend and backend.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Bruno Rodrigo</h3>
                     <p class="team-role" data-i18n="about.roleBruno">Logic &amp; data-oriented</p>
-                    <p class="team-bio" data-i18n="about.bioBruno">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.</p>
+                    <p class="team-bio" data-i18n="about.bioBruno">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Data flow and persistence.</p>
                 </article>
                 <article class="card card-team">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3 data-i18n="about.namePlaceholder">Nombre Apellido</h3>
                     <p class="team-role" data-i18n="about.roleMember">Team member</p>
-                    <p class="team-bio" data-i18n="about.bioMember">Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch.</p>
+                    <p class="team-bio" data-i18n="about.bioMember">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Name pending. Same team and roadmap for TechWatch.</p>
                 </article>
             </div>
         </div>
@@ -139,7 +152,7 @@
         <div class="container-pricing">
             <h2 data-i18n="pricing.title">Pricing</h2>
             <h3 class="pricing-subtitle" data-i18n="pricing.subtitle">Plans that match how you use your smart home</h3>
-            <p class="pricing-intro" data-i18n-html="pricing.introHtml">Three paid tiers in <strong>PEN</strong> (indicative). TechWatch is in active development, so features will roll out gradually and early versions may use simulated data until integrations are live.</p>
+            <p class="pricing-intro" data-i18n-html="pricing.introHtml">Three paid tiers in <strong>PEN</strong>. Choose the plan that fits how you use your smart home.</p>
             <div class="card-pricing">
                 <article class="card card-plan">
                     <h4 class="plan-name" data-i18n="pricing.starterName">Starter</h4>
@@ -246,5 +259,6 @@
     </div>
 </footer>
 <script src="./i18n.js"></script>
+<script src="./nav-drawer.js"></script>
 </body>
 </html>

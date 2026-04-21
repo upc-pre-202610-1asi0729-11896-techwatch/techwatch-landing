@@ -18,7 +18,9 @@
                 standardFeatures: "Standard plan includes",
                 completeFeatures: "Complete plan includes",
                 dashboardNav: "Navigation",
-                dashboardBrand: "Back to home"
+                dashboardBrand: "Back to home",
+                navMenuToggle: "Open site menu",
+                navMenuClose: "Close site menu"
             },
             nav: {
                 hero: "Hero",
@@ -60,21 +62,21 @@
                 title: "About us",
                 lead: "UPC Software Engineering students building TechWatch",
                 roleLuis: "Logic & backend-oriented",
-                bioLuis: "Software Engineering student at UPC. Skills: C++, HTML, CSS, JavaScript, plus C#, Python, and Java—focused on structure, APIs, and solid logic for upcoming backend features.",
+                bioLuis: "Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Backend structure and APIs.",
                 roleAlex: "UI / UX & frontend-oriented",
-                bioAlex: "Software Engineering student at UPC. Same stack as above (C++, HTML, CSS, JS, C#, Python, Java) with <strong>Flutter</strong> and a stronger focus on design, layouts, and user-facing experience for future mobile and web frontends.",
+                bioAlex: "Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and frontend for web and mobile.",
                 roleRonal: "Logic & integration-oriented",
-                bioRonal: "Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Interested in connecting features cleanly when we move from this landing to real frontend and backend services.",
+                bioRonal: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Clean integration with future frontend and backend.",
                 roleBruno: "Logic & data-oriented",
-                bioBruno: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript—with an eye on data flow and persistence as the product grows.",
+                bioBruno: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Data flow and persistence.",
                 namePlaceholder: "Nombre Apellido",
                 roleMember: "Team member",
-                bioMember: "Software Engineering student at UPC. Knowledge in C++, HTML, CSS, and JavaScript. Name to be updated when confirmed—same team, same roadmap for TechWatch."
+                bioMember: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Name pending. Same team and roadmap for TechWatch."
             },
             pricing: {
                 title: "Pricing",
                 subtitle: "Plans that match how you use your smart home",
-                introHtml: "Three paid tiers in <strong>PEN</strong> (indicative). TechWatch is in active development, so features will roll out gradually and early versions may use simulated data until integrations are live.",
+                introHtml: "Three paid tiers in <strong>PEN</strong>. Choose the plan that fits how you use your smart home.",
                 perMonth: "/ month",
                 starterName: "Starter",
                 starterTag: "Entry monitoring for a small set of devices and rooms.",
@@ -152,7 +154,7 @@
                 logout: "Log out",
                 sidebarFoot: "© 2026 TechWatch",
                 contentTitle: "Device Management",
-                contentLead: "Static sample view (no data or logic).",
+                contentLead: "Manage rooms, devices, and pairing from this workspace.",
                 cardTitle: "Devices",
                 row1Name: "Living room hub",
                 row2Name: "Kitchen sensor pack",
@@ -179,7 +181,9 @@
                 standardFeatures: "Incluye plan Standard",
                 completeFeatures: "Incluye plan Complete",
                 dashboardNav: "Navegación",
-                dashboardBrand: "Volver al inicio"
+                dashboardBrand: "Volver al inicio",
+                navMenuToggle: "Abrir menú del sitio",
+                navMenuClose: "Cerrar menú del sitio"
             },
             nav: {
                 hero: "Inicio",
@@ -221,21 +225,21 @@
                 title: "Nosotros",
                 lead: "Estudiantes de Ingeniería de Software en la UPC construyendo TechWatch",
                 roleLuis: "Lógica y backend",
-                bioLuis: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS, JavaScript, además de C#, Python y Java: enfoque en estructura, APIs y lógica sólida para el backend.",
+                bioLuis: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS, JavaScript, C#, Python y Java. Estructura de backend y APIs.",
                 roleAlex: "UI / UX y frontend",
-                bioAlex: "Estudiante de Ingeniería de Software en la UPC. Mismo stack (C++, HTML, CSS, JS, C#, Python, Java) con <strong>Flutter</strong> y mayor foco en diseño, maquetación y experiencia de usuario en web y móvil.",
+                bioAlex: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS, JavaScript, C#, Python, Java y Flutter. Diseño y frontend web y móvil.",
                 roleRonal: "Lógica e integración",
-                bioRonal: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Interés en conectar funciones de forma ordenada al pasar de esta landing a servicios reales.",
+                bioRonal: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Integración ordenada con futuro frontend y backend.",
                 roleBruno: "Lógica y datos",
-                bioBruno: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript, con mirada al flujo de datos y persistencia a medida que crece el producto.",
+                bioBruno: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Flujo de datos y persistencia.",
                 namePlaceholder: "Nombre Apellido",
                 roleMember: "Miembro del equipo",
-                bioMember: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Nombre por confirmar: mismo equipo y hoja de ruta de TechWatch."
+                bioMember: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Nombre pendiente. Mismo equipo y hoja de ruta de TechWatch."
             },
             pricing: {
                 title: "Precios",
                 subtitle: "Planes según cómo usas tu hogar inteligente",
-                introHtml: "Tres niveles de pago en <strong>PEN</strong> (indicativos). TechWatch está en desarrollo activo: las funciones llegarán por fases y las primeras versiones pueden usar datos simulados hasta que las integraciones estén listas.",
+                introHtml: "Tres niveles de pago en <strong>PEN</strong>. Elige el plan que encaje con cómo usas tu hogar inteligente.",
                 perMonth: "/ mes",
                 starterName: "Starter",
                 starterTag: "Monitoreo inicial para pocos dispositivos y habitaciones.",
@@ -313,7 +317,7 @@
                 logout: "Cerrar sesión",
                 sidebarFoot: "© 2026 TechWatch",
                 contentTitle: "Gestión de dispositivos",
-                contentLead: "Vista estática de ejemplo (sin datos ni lógica).",
+                contentLead: "Gestiona habitaciones, dispositivos y emparejado desde este espacio.",
                 cardTitle: "Dispositivos",
                 row1Name: "Hub sala de estar",
                 row2Name: "Pack sensores cocina",
@@ -395,6 +399,10 @@
             var active = btn.getAttribute("data-lang") === lang;
             btn.classList.toggle("lang-btn--active", active);
         });
+
+        if (typeof window.TechWatchNavDrawerSync === "function") {
+            window.TechWatchNavDrawerSync();
+        }
     }
 
     function bindLangSwitch() {
