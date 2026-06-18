@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png">
 </head>
@@ -13,7 +16,7 @@
     <div class="div-header">
         <a href="index.html" class="brand-link" data-i18n-aria="meta.brandHome" aria-label="TechWatch home">
             <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="">
-            <p class="title-logo">Techwatch</p>
+            <p class="title-logo">TechWatch</p>
         </a>
 
         <nav class="navbar" aria-label="Main" data-i18n-aria="meta.navMain">
@@ -38,8 +41,8 @@
                 <button type="button" class="lang-btn lang-btn--active" data-lang="en">EN</button>
                 <button type="button" class="lang-btn" data-lang="es">ES</button>
             </div>
-            <a href="login.html" class="btn-nav btn-nav--ghost" data-i18n="nav.login">Login</a>
-            <a href="register.html" class="btn-nav btn-nav--primary" data-i18n="nav.register">Register</a>
+            <a href="#" class="btn-nav btn-nav--ghost" data-tw-link="login" data-i18n="nav.login">Login</a>
+            <a href="#" class="btn-nav btn-nav--primary" data-tw-link="register" data-i18n="nav.register">Register</a>
         </div>
 
         <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" data-i18n-aria="meta.navMenuToggle" aria-label="Open site menu">
@@ -51,94 +54,120 @@
         </button>
     </div>
 
-    <section id="hero" class="full-screen section-content">
-        <h1 class="title-main" data-i18n="hero.title">Take Control of Your Smart Home</h1>
-        <p class="txt-primary" data-i18n="hero.subtitle">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
-        <a class="btn-primary" href="https://frontend-tech-black.vercel.app" data-i18n="hero.cta">Try it right now!</a>
+    <section id="hero" class="hero section-content">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-inner">
+            <div class="hero-copy reveal">
+                <span class="section-eyebrow" data-i18n="hero.eyebrow">Smart home platform</span>
+                <h1 class="title-main" data-i18n="hero.title">Take Control of Your Smart Home</h1>
+                <p class="txt-primary" data-i18n="hero.subtitle">Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.</p>
+            </div>
+        </div>
     </section>
 </header>
 
 <main class="main">
-    <section id="feature" class="full-screen section-content">
+    <section id="feature" class="section-content section-features">
         <div class="container-feature">
-            <h2 data-i18n="features.title">Features</h2>
+            <span class="section-eyebrow section-eyebrow--dark reveal" data-i18n="features.eyebrow">Why TechWatch</span>
+            <h2 class="reveal" data-i18n="features.title">Features</h2>
+            <p class="section-lead reveal" data-i18n="features.lead">Everything you need to understand, organize, and optimize your connected home in one place.</p>
             <div class="container-feature-div">
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">💻</span>
-                    <h2 data-i18n="features.coreTitle">Core</h2>
-                    <p data-i18n="features.coreP1">Real-Time Monitoring</p>
-                    <p data-i18n="features.coreP2">Track your devices and see what’s happening in your home instantly.</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+                    </div>
+                    <h3 data-i18n="features.coreTitle">Core</h3>
+                    <p class="feature-tag" data-i18n="features.coreP1">Real-Time Monitoring</p>
+                    <p data-i18n="features.coreP2">Track your devices and see what's happening in your home instantly.</p>
                 </div>
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">📈</span>
-                    <h2 data-i18n="features.econTitle">Economic Value</h2>
-                    <p data-i18n="features.econP1">Energy Consumption Insights</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 5-8"/></svg>
+                    </div>
+                    <h3 data-i18n="features.econTitle">Economic Value</h3>
+                    <p class="feature-tag" data-i18n="features.econP1">Energy Consumption Insights</p>
                     <p data-i18n="features.econP2">Understand which devices consume the most energy and reduce unnecessary costs.</p>
                 </div>
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">🕹️</span>
-                    <h2 data-i18n="features.expTitle">Experience</h2>
-                    <p data-i18n="features.expP1">Mobile control</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+                    </div>
+                    <h3 data-i18n="features.expTitle">Experience</h3>
+                    <p class="feature-tag" data-i18n="features.expP1">Mobile control</p>
                     <p data-i18n="features.expP2">Access your home data anytime, anywhere from your smartphone</p>
                 </div>
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">⚙️</span>
-                    <h2 data-i18n="features.orgTitle">Organization</h2>
-                    <p data-i18n="features.orgP1">Device and space management</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                    </div>
+                    <h3 data-i18n="features.orgTitle">Organization</h3>
+                    <p class="feature-tag" data-i18n="features.orgP1">Device and space management</p>
                     <p data-i18n="features.orgP2">Organize your devices by room and easily manage your home</p>
                 </div>
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">🛡️</span>
-                    <h2 data-i18n="features.secTitle">Security</h2>
-                    <p data-i18n="features.secP1">Smart Alerts</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 data-i18n="features.secTitle">Security</h3>
+                    <p class="feature-tag" data-i18n="features.secP1">Smart Alerts</p>
                     <p data-i18n="features.secP2">Get instant notifications when unusual activity is detected at home.</p>
                 </div>
 
-                <div class="card card--feature">
-                    <span class="feature-emoji" aria-hidden="true">🖥️</span>
-                    <h2 data-i18n="features.anaTitle">Analytics</h2>
-                    <p data-i18n="features.anaP1">Actionable Dashboards</p>
+                <div class="card card--feature reveal">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <h3 data-i18n="features.anaTitle">Analytics</h3>
+                    <p class="feature-tag" data-i18n="features.anaP1">Actionable Dashboards</p>
                     <p data-i18n="features.anaP2">Transform household data into clear insights to make better daily decisions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="full-screen section-content section-about">
+    <section id="about" class="section-content section-about">
         <div class="container-about">
-            <h2 data-i18n="about.title">About us</h2>
-            <p class="about-lead" data-i18n="about.lead">UPC Software Engineering students building TechWatch</p>
+            <span class="section-eyebrow section-eyebrow--dark reveal" data-i18n="about.eyebrow">The team</span>
+            <h2 class="reveal" data-i18n="about.title">About us</h2>
+            <p class="about-lead reveal" data-i18n="about.lead">UPC Software Engineering students building TechWatch</p>
             <div class="container-team-div">
-                <article class="card card-team">
+                <article class="card card-team reveal">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Luis Alva</h3>
                     <p class="team-role" data-i18n="about.roleLuis">Logic &amp; backend-oriented</p>
                     <p class="team-bio" data-i18n="about.bioLuis">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Backend structure and APIs.</p>
                 </article>
-                <article class="card card-team card-team--highlight">
+                <article class="card card-team reveal">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Alexander Fernández</h3>
-                    <p class="team-role team-role--design" data-i18n="about.roleAlex">UI / UX &amp; frontend-oriented</p>
+                    <p class="team-role" data-i18n="about.roleAlex">UI / UX &amp; frontend-oriented</p>
                     <p class="team-bio" data-i18n="about.bioAlex">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and frontend for web and mobile.</p>
                 </article>
-                <article class="card card-team">
+                <article class="card card-team reveal">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Ronal Toro</h3>
                     <p class="team-role" data-i18n="about.roleRonal">Logic &amp; integration-oriented</p>
                     <p class="team-bio" data-i18n="about.bioRonal">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Clean integration with future frontend and backend.</p>
                 </article>
-                <article class="card card-team">
+                <article class="card card-team reveal">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3>Bruno Rodrigo</h3>
                     <p class="team-role" data-i18n="about.roleBruno">Logic &amp; data-oriented</p>
                     <p class="team-bio" data-i18n="about.bioBruno">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Data flow and persistence.</p>
                 </article>
-                <article class="card card-team">
+                <article class="card card-team reveal">
                     <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
                     <h3 data-i18n="about.namePlaceholder">Nombre Apellido</h3>
                     <p class="team-role" data-i18n="about.roleMember">Team member</p>
@@ -148,16 +177,17 @@
         </div>
     </section>
 
-    <section id="pricing" class="full-screen section-content section-pricing">
+    <section id="pricing" class="section-content section-pricing">
         <div class="container-pricing">
-            <h2 data-i18n="pricing.title">Pricing</h2>
-            <h3 class="pricing-subtitle" data-i18n="pricing.subtitle">Plans that match how you use your smart home</h3>
-            <p class="pricing-intro" data-i18n-html="pricing.introHtml">Three paid tiers in <strong>PEN</strong>. Choose the plan that fits how you use your smart home.</p>
+            <span class="section-eyebrow section-eyebrow--dark reveal" data-i18n="pricing.eyebrow">Plans</span>
+            <h2 class="reveal" data-i18n="pricing.title">Pricing</h2>
+            <h3 class="pricing-subtitle reveal" data-i18n="pricing.subtitle">Plans that match how you use your smart home</h3>
+            <p class="pricing-intro reveal" data-i18n-html="pricing.introHtml">Three paid tiers in <strong>PEN</strong>. Choose the plan that fits how you use your smart home.</p>
             <div class="card-pricing">
-                <article class="card card-plan">
+                <article class="card card-plan reveal">
                     <h4 class="plan-name" data-i18n="pricing.starterName">Starter</h4>
                     <p class="plan-tagline" data-i18n="pricing.starterTag">Entry monitoring for a small set of devices and rooms.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;10</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;10</span> <span class="plan-period" data-i18n="pricing.perMonth">/ month</span></p>
                     <ul class="plan-features" data-i18n-aria="meta.starterFeatures" aria-label="Starter plan includes">
                         <li data-i18n-html="pricing.starterLi1">Core <strong>device management</strong> views</li>
                         <li data-i18n-html="pricing.starterLi2"><strong>Live status</strong> for a limited device count</li>
@@ -165,12 +195,13 @@
                         <li data-i18n-html="pricing.starterLi4"><strong>7-day</strong> activity snapshot</li>
                         <li data-i18n="pricing.starterLi5">Email support (community tier)</li>
                     </ul>
-                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.starterBtn">Choose Starter</button>
+                    <a class="btn-primary btn-plan" href="#" data-tw-link="register" data-i18n="pricing.starterBtn">Choose Starter</a>
                 </article>
-                <article class="card card-plan card-plan--premium">
+                <article class="card card-plan card-plan--premium reveal">
+                    <span class="plan-badge" data-i18n="pricing.popular">Most popular</span>
                     <h4 class="plan-name" data-i18n="pricing.standardName">Standard</h4>
                     <p class="plan-tagline" data-i18n="pricing.standardTag">More history, alerts, and exports for active households.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;15</span> <span class="plan-period" data-i18n="pricing.perMonth">/ month</span></p>
                     <ul class="plan-features" data-i18n-aria="meta.standardFeatures" aria-label="Standard plan includes">
                         <li data-i18n-html="pricing.standardLi1"><strong>Everything in Starter</strong>, with a higher device cap</li>
                         <li data-i18n-html="pricing.standardLi2"><strong>Extended history</strong> for trends and comparisons</li>
@@ -178,12 +209,12 @@
                         <li data-i18n-html="pricing.standardLi4"><strong>CSV-friendly exports</strong> for budgeting</li>
                         <li data-i18n="pricing.standardLi5">Faster support queue</li>
                     </ul>
-                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.standardBtn">Choose Standard</button>
+                    <a class="btn-primary btn-plan" href="#" data-tw-link="register" data-i18n="pricing.standardBtn">Choose Standard</a>
                 </article>
-                <article class="card card-plan">
+                <article class="card card-plan reveal">
                     <h4 class="plan-name" data-i18n="pricing.completeName">Complete</h4>
                     <p class="plan-tagline" data-i18n="pricing.completeTag">Full visibility, reporting, and priority access as we scale.</p>
-                    <p class="plan-price"><span class="plan-amount">S/&nbsp;20</span> <span class="plan-period" data-i18n="pricing.perMonth">/ mes</span></p>
+                    <p class="plan-price"><span class="plan-amount">S/&nbsp;20</span> <span class="plan-period" data-i18n="pricing.perMonth">/ month</span></p>
                     <ul class="plan-features" data-i18n-aria="meta.completeFeatures" aria-label="Complete plan includes">
                         <li data-i18n-html="pricing.completeLi1"><strong>Everything in Standard</strong>, top device tier at launch</li>
                         <li data-i18n-html="pricing.completeLi2"><strong>Long-range analytics</strong> and seasonal views</li>
@@ -191,42 +222,43 @@
                         <li data-i18n-html="pricing.completeLi4"><strong>Priority support</strong> and roadmap previews</li>
                         <li data-i18n-html="pricing.completeLi5">Early access to <strong>integrations</strong> as they ship</li>
                     </ul>
-                    <button class="btn-primary btn-plan" type="button" data-i18n="pricing.completeBtn">Choose Complete</button>
+                    <a class="btn-primary btn-plan" href="#" data-tw-link="register" data-i18n="pricing.completeBtn">Choose Complete</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="full-screen section-content section-testimonials">
+    <section id="testimonials" class="section-content section-testimonials">
         <div class="container-testimonials">
-            <h2 data-i18n="testimonials.title">What our clients say</h2>
-            <p class="testimonials-lead" data-i18n="testimonials.lead">Real comments from users who improved their daily smart-home experience with TechWatch.</p>
+            <span class="section-eyebrow section-eyebrow--dark reveal" data-i18n="testimonials.eyebrow">Testimonials</span>
+            <h2 class="reveal" data-i18n="testimonials.title">What our clients say</h2>
+            <p class="testimonials-lead reveal" data-i18n="testimonials.lead">Real comments from users who improved their daily smart-home experience with TechWatch.</p>
             <div class="testimonial-slider" data-i18n-aria="meta.testimonialsSlider" aria-label="Client reviews slider">
-                <article class="card card-testimonial">
+                <article class="card card-testimonial reveal">
                     <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
                     <h3>Valentino Cruz</h3>
                     <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
                     <p data-i18n="testimonials.q1">"I can finally see which device is driving usage. In my first month I lowered my power bill without changing my whole routine."</p>
                 </article>
-                <article class="card card-testimonial">
+                <article class="card card-testimonial reveal">
                     <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
                     <h3>Thiago Medina</h3>
                     <p class="testimonial-role" data-i18n="testimonials.roleFree">Free user</p>
                     <p data-i18n="testimonials.q2">"The app is easy to use and the live dashboard helped me organize everything by room. Super clear and fast."</p>
                 </article>
-                <article class="card card-testimonial">
+                <article class="card card-testimonial reveal">
                     <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
                     <h3>Lautaro Reyes</h3>
                     <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
                     <p data-i18n="testimonials.q3">"Smart alerts told me when a device stayed on all night. I avoided unnecessary usage right away."</p>
                 </article>
-                <article class="card card-testimonial">
+                <article class="card card-testimonial reveal">
                     <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
                     <h3>Barbara Cantarero</h3>
                     <p class="testimonial-role" data-i18n="testimonials.rolePremium">Premium customer</p>
                     <p data-i18n="testimonials.q4">"I love the design and how simple everything looks. I used to struggle with my usage; now I can plan ahead every week."</p>
                 </article>
-                <article class="card card-testimonial">
+                <article class="card card-testimonial reveal">
                     <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
                     <h3>Matias Solano</h3>
                     <p class="testimonial-role" data-i18n="testimonials.roleFree">Free user</p>
@@ -236,21 +268,21 @@
         </div>
     </section>
 
-    <section id="contact" class="full-screen section-content">
+    <section id="contact" class="section-content section-contact">
         <div class="contact-div">
-            <div class="contact-us">
+            <div class="contact-us reveal">
+                <span class="section-eyebrow section-eyebrow--dark" data-i18n="contact.eyebrow">Get in touch</span>
                 <h2 data-i18n="contact.title">Contact Us</h2>
-                <p data-i18n="contact.line1">Have questions about TechWatch? </p>
-                <p data-i18n="contact.line2">We’re here to help you manage your smart home more efficiently.</p>
+                <p data-i18n="contact.line1">Have questions about TechWatch?</p>
+                <p data-i18n="contact.line2">We're here to help you manage your smart home more efficiently.</p>
                 <input class="input" type="text" name="contact-name" data-i18n-placeholder="contact.phName" placeholder="Friedrich Nietzsche">
                 <input class="input" type="email" name="contact-email" data-i18n-placeholder="contact.phEmail" placeholder="Nietzsche@techwatch">
                 <textarea class="input" rows="5" name="contact-message" data-i18n-placeholder="contact.phMessage" placeholder="Your Message"></textarea>
                 <button class="btn-primary contact-send" type="button" data-i18n="contact.send">Send</button>
             </div>
-            <img class="contact-illustration" src="https://estudiante.upc.edu.pe/_nuxt/gif-landing.DMH_R6to.gif" data-i18n-alt="contact.illustrationAlt" alt="Support illustration">
+            <img class="contact-illustration reveal" src="https://estudiante.upc.edu.pe/_nuxt/gif-landing.DMH_R6to.gif" data-i18n-alt="contact.illustrationAlt" alt="Support illustration">
         </div>
     </section>
-
 </main>
 
 <footer class="footer footer--compact">
@@ -258,7 +290,9 @@
         <p class="footer-copy" data-i18n="footer.copy">© 2026 TechWatch. All rights reserved.</p>
     </div>
 </footer>
+<script src="./config.js"></script>
 <script src="./i18n.js"></script>
 <script src="./nav-drawer.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

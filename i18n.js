@@ -33,12 +33,22 @@
                 register: "Register"
             },
             hero: {
+                eyebrow: "Smart home platform",
                 title: "Take Control of Your Smart Home",
                 subtitle: "Monitor, analyze, and optimize your home devices with real-time insights and smart dashboards.",
-                cta: "Try it right now!"
+                cta: "Open the app",
+                ctaSecondary: "Explore features",
+                stat1Value: "Real-time",
+                stat1Label: "Device monitoring",
+                stat2Value: "24/7",
+                stat2Label: "Smart alerts",
+                stat3Value: "100%",
+                stat3Label: "Cloud synced"
             },
             features: {
+                eyebrow: "Why TechWatch",
                 title: "Features",
+                lead: "Everything you need to understand, organize, and optimize your connected home in one place.",
                 coreTitle: "Core",
                 coreP1: "Real-Time Monitoring",
                 coreP2: "Track your devices and see what’s happening in your home instantly.",
@@ -59,6 +69,7 @@
                 anaP2: "Transform household data into clear insights to make better daily decisions."
             },
             about: {
+                eyebrow: "The team",
                 title: "About us",
                 lead: "UPC Software Engineering students building TechWatch",
                 roleLuis: "Logic & backend-oriented",
@@ -74,8 +85,10 @@
                 bioMember: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Name pending. Same team and roadmap for TechWatch."
             },
             pricing: {
+                eyebrow: "Plans",
                 title: "Pricing",
                 subtitle: "Plans that match how you use your smart home",
+                popular: "Most popular",
                 introHtml: "Three paid tiers in <strong>PEN</strong>. Choose the plan that fits how you use your smart home.",
                 perMonth: "/ month",
                 starterName: "Starter",
@@ -104,6 +117,7 @@
                 completeLi5: "Early access to <strong>integrations</strong> as they ship"
             },
             testimonials: {
+                eyebrow: "Testimonials",
                 title: "What our clients say",
                 lead: "Real comments from users who improved their daily smart-home experience with TechWatch.",
                 rolePremium: "Premium customer",
@@ -115,6 +129,7 @@
                 q5: "\"TechWatch took me from a messy setup to controlling my home from my phone. Really useful day to day.\""
             },
             contact: {
+                eyebrow: "Get in touch",
                 title: "Contact Us",
                 line1: "Have questions about TechWatch?",
                 line2: "We’re here to help you manage your smart home more efficiently.",
@@ -126,6 +141,12 @@
             },
             footer: {
                 copy: "© 2026 TechWatch. All rights reserved."
+            },
+            cta: {
+                title: "Ready to take control?",
+                subtitle: "Jump into the live dashboard and start managing your smart home today.",
+                register: "Create free account",
+                login: "Log in"
             },
             auth: {
                 loginTitle: "Log in",
@@ -196,12 +217,22 @@
                 register: "Registrarse"
             },
             hero: {
+                eyebrow: "Plataforma smart home",
                 title: "Controla tu hogar inteligente",
                 subtitle: "Monitorea, analiza y optimiza tus dispositivos con información en tiempo real y paneles claros.",
-                cta: "Pruébalo ahora"
+                cta: "Abrir la app",
+                ctaSecondary: "Ver funciones",
+                stat1Value: "Tiempo real",
+                stat1Label: "Monitoreo de dispositivos",
+                stat2Value: "24/7",
+                stat2Label: "Alertas inteligentes",
+                stat3Value: "100%",
+                stat3Label: "Sincronizado en la nube"
             },
             features: {
+                eyebrow: "Por qué TechWatch",
                 title: "Funciones",
+                lead: "Todo lo que necesitas para entender, organizar y optimizar tu hogar conectado en un solo lugar.",
                 coreTitle: "Núcleo",
                 coreP1: "Monitoreo en tiempo real",
                 coreP2: "Sigue tus dispositivos y ve al instante qué ocurre en tu hogar.",
@@ -222,6 +253,7 @@
                 anaP2: "Convierte los datos del hogar en decisiones cotidianas más claras."
             },
             about: {
+                eyebrow: "El equipo",
                 title: "Nosotros",
                 lead: "Estudiantes de Ingeniería de Software en la UPC construyendo TechWatch",
                 roleLuis: "Lógica y backend",
@@ -237,8 +269,10 @@
                 bioMember: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Nombre pendiente. Mismo equipo y hoja de ruta de TechWatch."
             },
             pricing: {
+                eyebrow: "Planes",
                 title: "Precios",
                 subtitle: "Planes según cómo usas tu hogar inteligente",
+                popular: "Más popular",
                 introHtml: "Tres niveles de pago en <strong>PEN</strong>. Elige el plan que encaje con cómo usas tu hogar inteligente.",
                 perMonth: "/ mes",
                 starterName: "Starter",
@@ -267,6 +301,7 @@
                 completeLi5: "Acceso anticipado a <strong>integraciones</strong> nuevas"
             },
             testimonials: {
+                eyebrow: "Opiniones",
                 title: "Lo que dicen nuestros usuarios",
                 lead: "Comentarios de quienes mejoraron su día a día con hogar inteligente y TechWatch.",
                 rolePremium: "Cliente Premium",
@@ -278,6 +313,7 @@
                 q5: "\"Pasé del desorden a controlar la casa desde el móvil. Muy útil en el día a día.\""
             },
             contact: {
+                eyebrow: "Escríbenos",
                 title: "Contáctanos",
                 line1: "¿Tienes dudas sobre TechWatch?",
                 line2: "Te ayudamos a gestionar tu hogar inteligente con más eficiencia.",
@@ -289,6 +325,12 @@
             },
             footer: {
                 copy: "© 2026 TechWatch. Todos los derechos reservados."
+            },
+            cta: {
+                title: "¿Listo para tomar el control?",
+                subtitle: "Entra al panel en vivo y empieza a gestionar tu hogar inteligente hoy.",
+                register: "Crear cuenta gratis",
+                login: "Iniciar sesión"
             },
             auth: {
                 loginTitle: "Iniciar sesión",
