@@ -27,9 +27,44 @@
         });
     }
 
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", wireLinks);
-    } else {
+    function i18nText(key, fallback) {
+        if (window.TechWatchI18n && typeof window.TechWatchI18n.t === "function") {
+            return window.TechWatchI18n.t(key);
+        }
+        return fallback;
+    }
+
+    // Formulario de contacto (landing estático, sin backend): limpia los campos
+    // y muestra una confirmacion breve para dar la sensacion de envio.
+    function wireContactForm() {
+        var section = document.querySelector(".section-contact");
+        if (!section) return;
+        var btn = section.querySelector(".contact-send");
+        if (!btn) return;
+
+        btn.addEventListener("click", function () {
+            section.querySelectorAll("input, textarea").forEach(function (field) {
+                field.value = "";
+            });
+
+            btn.disabled = true;
+            btn.textContent = i18nText("contact.sent", "Sent ✓");
+
+            setTimeout(function () {
+                btn.disabled = false;
+                btn.textContent = i18nText("contact.send", "Send");
+            }, 2000);
+        });
+    }
+
+    function init() {
         wireLinks();
+        wireContactForm();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
     }
 })();

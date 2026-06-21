@@ -87,8 +87,8 @@
                 roleBruno: "Logic & data-oriented",
                 bioBruno: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Data flow and persistence.",
                 namePlaceholder: "Nombre Apellido",
-                roleMember: "Team member",
-                bioMember: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Name pending. Same team and roadmap for TechWatch."
+                roleMember: "QA & testing-oriented",
+                bioMember: "Software Engineering student at UPC. C++ and exploratory testing. Reviewed forms, footer, external links and pre-deploy checks for TechWatch."
             },
             pricing: {
                 eyebrow: "Plans",
@@ -137,6 +137,7 @@
             contact: {
                 eyebrow: "Get in touch",
                 title: "Contact Us",
+                sent: "Sent ✓",
                 line1: "Have questions about TechWatch?",
                 line2: "We’re here to help you manage your smart home more efficiently.",
                 phName: "Friedrich Nietzsche",
@@ -277,8 +278,8 @@
                 roleBruno: "Lógica y datos",
                 bioBruno: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Flujo de datos y persistencia.",
                 namePlaceholder: "Nombre Apellido",
-                roleMember: "Miembro del equipo",
-                bioMember: "Estudiante de Ingeniería de Software en la UPC. C++, HTML, CSS y JavaScript. Nombre pendiente. Mismo equipo y hoja de ruta de TechWatch."
+                roleMember: "QA y pruebas",
+                bioMember: "Estudiante de Ingeniería de Software en la UPC. C++ y pruebas exploratorias. Revisó formularios, footer, enlaces externos y verificación previa al despliegue de TechWatch."
             },
             pricing: {
                 eyebrow: "Planes",
@@ -327,6 +328,7 @@
             contact: {
                 eyebrow: "Escríbenos",
                 title: "Contáctanos",
+                sent: "Enviado ✓",
                 line1: "¿Tienes dudas sobre TechWatch?",
                 line2: "Te ayudamos a gestionar tu hogar inteligente con más eficiencia.",
                 phName: "Friedrich Nietzsche",

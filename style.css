@@ -439,6 +439,14 @@ a.btn-nav {
     margin-inline: auto;
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 28px;
+}
+
 /* BUTTONS */
 .btn-primary {
     border: none;
