@@ -25,6 +25,7 @@
             nav: {
                 hero: "Hero",
                 features: "Features",
+                product: "Product",
                 about: "About us",
                 pricing: "Pricing",
                 reviews: "Reviews",
@@ -44,6 +45,11 @@
                 stat2Label: "Smart alerts",
                 stat3Value: "100%",
                 stat3Label: "Cloud synced"
+            },
+            product: {
+                eyebrow: "About the product",
+                title: "See TechWatch in action",
+                lead: "A quick tour of how TechWatch helps you monitor, control, and optimize your connected home."
             },
             features: {
                 eyebrow: "Why TechWatch",
@@ -209,6 +215,7 @@
             nav: {
                 hero: "Inicio",
                 features: "Funciones",
+                product: "Producto",
                 about: "Nosotros",
                 pricing: "Precios",
                 reviews: "Opiniones",
@@ -228,6 +235,11 @@
                 stat2Label: "Alertas inteligentes",
                 stat3Value: "100%",
                 stat3Label: "Sincronizado en la nube"
+            },
+            product: {
+                eyebrow: "Sobre el producto",
+                title: "Mira TechWatch en acción",
+                lead: "Un recorrido rápido de cómo TechWatch te ayuda a monitorear, controlar y optimizar tu hogar conectado."
             },
             features: {
                 eyebrow: "Por qué TechWatch",
