@@ -4,7 +4,7 @@
     var MESSAGES = {
         en: {
             pageTitle: {
-                index: "TechWatch",
+                index: "TechWatch | Smart Home Monitoring Platform",
                 login: "Login — TechWatch",
                 register: "Register — TechWatch",
                 dashboard: "Dashboard — TechWatch"
@@ -188,7 +188,7 @@
         },
         es: {
             pageTitle: {
-                index: "TechWatch",
+                index: "TechWatch | Smart Home Monitoring Platform",
                 login: "Iniciar sesión — TechWatch",
                 register: "Registro — TechWatch",
                 dashboard: "Panel — TechWatch"
